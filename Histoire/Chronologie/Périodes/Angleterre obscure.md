@@ -2,23 +2,12 @@
 type: periode
 civilisation: Angleterre
 nom: Angleterre obscure
-debut: 400
-fin: 800
-couleur: "#5b9c72"
-resume: Dynastie régnante anglaise marquant la Renaissance anglaise et la Réforme.
+debut: 650
+fin: 964
+couleur: "#236B00"
+resume: Le Wessex quoi
 ordre: "270"
+detaille: non
 ---
-
-# Dynastie Tudor
-
-La dynastie Tudor débute avec Henri VII après la guerre des Deux-Roses et s'achève avec Élisabeth Ire.
-
-## Points importants
-
-- Henri VII
-- Henri VIII
-- Rupture avec Rome
-- Église anglicane
-- Marie Ire
-- Élisabeth Ire
-- Défaite de l'Invincible Armada (1588)
+- On a les Scots, les Bretons, les Pictes, et les Anglo saxons qui comptent la Northumbrie et la Mercie.
+- En 964 le Wessex chasse les dernier vikings du Danlaw et unit l'Angleterre.

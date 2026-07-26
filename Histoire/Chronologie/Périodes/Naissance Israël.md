@@ -4,7 +4,7 @@ civilisation: Israël
 nom: Naissance Israël
 debut: -1040
 fin: -587
-couleur: "#569979"
+couleur: "#424242"
 resume: Naissance d'Israël et de Juda
 ordre: "70"
 detaille: non

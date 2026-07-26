@@ -3,22 +3,13 @@ type: periode
 civilisation: Japon
 nom: Japon ancien
 debut: 250
-fin: 1200
-couleur: "#5b9c72"
-resume: Dynastie régnante anglaise marquant la Renaissance anglaise et la Réforme.
+fin: 1185
+couleur: "#751000"
+resume:
 ordre: "150"
+detaille: non
 ---
-
-# Dynastie Tudor
-
-La dynastie Tudor débute avec Henri VII après la guerre des Deux-Roses et s'achève avec Élisabeth Ire.
-
-## Points importants
-
-- Henri VII
-- Henri VIII
-- Rupture avec Rome
-- Église anglicane
-- Marie Ire
-- Élisabeth Ire
-- Défaite de l'Invincible Armada (1588)
+- Période Jomon puis période Yayoi ...
+- Au IVe siècle c'est le début du royaume de Yamato. Au VIIIe siècle le royaume couvre tout le japon sauf Hokkaido.
+- La capitale se déplace de Nara à Kyoto en 794.
+- En 1185, après des révoltes c'est le clan des Minamoto qui prend le contrôle et le pays devient un Shogunat.

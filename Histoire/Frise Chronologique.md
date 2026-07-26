@@ -1,12 +1,27 @@
 ```dataviewjs
-const pages = dv
-    .pages('"Histoire/Chronologie/Périodes"')
-    .where(page =>
-        page.type === "periode" &&
-        page.debut != null &&
-        page.fin != null
-    )
-    .array();
+const FRISES = [
+    {
+        id: "chronologie",
+        nom: "Civilisations",
+        dossier: "Histoire/Chronologie/Périodes"
+    },
+    {
+        id: "chronologie2",
+        nom: "Histoire de France",
+        dossier: "Histoire/Chronologie2/Périodes"
+    },
+        {
+        id: "chronologie3",
+        nom: "Préhistoire",
+        dossier: "Histoire/Chronologie3/Périodes"
+    }
+];
+
+const pages = FRISES.flatMap(frise =>
+    dv.pages(`"${frise.dossier}"`)
+        .array()
+        .map(page => ({ page, friseId: frise.id }))
+);
 
 if (pages.length === 0) {
     dv.paragraph(
@@ -27,7 +42,7 @@ if (pages.length === 0) {
     const FACTEUR_COMPRESSION = 0.25;
 
     const ZOOM_MIN = 0.5;
-    const ZOOM_MAX = 12;
+    const ZOOM_MAX = 40;
     const ZOOM_PAS = 0.25;
 
     /* =====================================================
@@ -137,6 +152,14 @@ if (pages.length === 0) {
             gap: 14px;
             align-items: start;
             width: 100%;
+        }
+
+        .frise-layout-sans-panneau {
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        .frise-layout-sans-panneau .frise-panneau {
+            display: none;
         }
 
         .frise-zone {
@@ -279,6 +302,30 @@ if (pages.length === 0) {
             outline-offset: -2px;
         }
 
+        .frise-date {
+            position: absolute;
+            top: 50%;
+            z-index: 4;
+            width: 16px;
+            height: 16px;
+            padding: 0;
+            border: 2px solid var(--background-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+        }
+
+        .frise-date:hover {
+            z-index: 7;
+            filter: brightness(1.15);
+            transform: translate(-50%, -50%) scale(1.18);
+        }
+
+        .frise-date.frise-periode-selectionnee {
+            outline-offset: 2px;
+        }
+
         .frise-periode-titre {
             display: flex;
             align-items: center;
@@ -414,6 +461,36 @@ if (pages.length === 0) {
             : valeurParDefaut;
     }
 
+    /*
+       Accepte une année numérique (1789, -52), une date Obsidian
+       (1789-07-14) ou un objet Date/Luxon fourni par Dataview.
+    */
+    function lireAnnee(value) {
+        if (value == null) {
+            return NaN;
+        }
+
+        if (
+            typeof value === "object" &&
+            Number.isFinite(Number(value.year))
+        ) {
+            return Number(value.year);
+        }
+
+        if (value instanceof Date && !Number.isNaN(value.getTime())) {
+            return value.getFullYear();
+        }
+
+        const valeur = String(value).trim();
+
+        if (/^-?\d+$/.test(valeur)) {
+            return Number(valeur);
+        }
+
+        const dateIso = valeur.match(/^(-?\d{1,6})-\d{2}-\d{2}/);
+        return dateIso ? Number(dateIso[1]) : NaN;
+    }
+
     function normaliser(value) {
         return texte(value)
             .normalize("NFD")
@@ -447,6 +524,35 @@ if (pages.length === 0) {
         }
 
         return `${valeur} apr. J.-C.`;
+    }
+
+    function afficherDate(value) {
+        if (value == null) {
+            return "";
+        }
+
+        const valeur = String(value).trim();
+        const dateIso = valeur.match(
+            /^(\d{4,6})-(\d{2})-(\d{2})/
+        );
+
+        if (!dateIso) {
+            return afficherAnnee(lireAnnee(value));
+        }
+
+        const [, annee, mois, jour] = dateIso;
+        const date = new Date(Date.UTC(
+            Number(annee),
+            Number(mois) - 1,
+            Number(jour)
+        ));
+
+        return new Intl.DateTimeFormat("fr-FR", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+            timeZone: "UTC"
+        }).format(date);
     }
 
     function valeursUniques(values) {
@@ -526,37 +632,67 @@ if (pages.length === 0) {
        DONNÉES
        ===================================================== */
 
-    const periodes = pages.map(page => ({
-        page,
-        fichier: page.file,
-        nom: texte(page.nom, page.file.name),
-        civilisation: texte(
-            page.civilisation,
-            "Sans civilisation"
-        ),
-        debut: Number(page.debut),
-        fin: Number(page.fin),
-        couleur: texte(
-            page.couleur,
-            "var(--interactive-accent)"
-        ),
-        resume: texte(
-            page.resume,
-            "Aucun résumé n'a encore été renseigné."
-        ),
-        ordre: nombre(page.ordre),
-        detaille: estOui(page.detaille)
-    }));
+    const periodes = pages
+        .filter(({ page }) =>
+            page.type === "periode" || page.type === "date"
+        )
+        .map(({ page, friseId }) => {
+            const estDate = page.type === "date";
+            const date = lireAnnee(page.date ?? page.annee);
+            const debut = estDate ? date : lireAnnee(page.debut);
+            const fin = estDate ? date : lireAnnee(page.fin);
 
-    const civilisations = valeursUniques(
-        periodes.map(periode => periode.civilisation)
-    );
+            return {
+                page,
+                friseId,
+                fichier: page.file,
+                type: estDate ? "date" : "periode",
+                dateOriginale: estDate
+                    ? (page.date ?? page.annee)
+                    : null,
+                nom: texte(page.nom, page.file.name),
+                civilisation: texte(
+                    page.civilisation,
+                    "Sans civilisation"
+                ),
+                debut,
+                fin,
+                couleur: texte(
+                    page.couleur,
+                    "var(--interactive-accent)"
+                ),
+                resume: texte(
+                    page.resume,
+                    "Aucun résumé n'a encore été renseigné."
+                ),
+                ordre: nombre(page.ordre),
+                detaille: estOui(page.detaille)
+            };
+        })
+        .filter(element =>
+            Number.isFinite(element.debut) &&
+            Number.isFinite(element.fin)
+        );
+
+    function periodesDeLaFrise(friseId) {
+        return periodes.filter(
+            periode => periode.friseId === friseId
+        );
+    }
+
+    function civilisationsDeLaFrise(friseId) {
+        return valeursUniques(
+            periodesDeLaFrise(friseId)
+                .map(periode => periode.civilisation)
+        );
+    }
 
     /* =====================================================
        ÉTAT
        ===================================================== */
 
     const etat = {
+        friseId: FRISES[0].id,
         zoom: 1,
         recherche: "",
         civilisation: "Toutes",
@@ -567,6 +703,9 @@ if (pages.length === 0) {
 
     let scrollActuel = null;
     let blocsActuels = [];
+    let zoomMoletteEnAttente = 0;
+    let ancrageZoomClientX = null;
+    let animationZoomMolette = null;
 
     /* =====================================================
        BARRE D'OUTILS
@@ -575,6 +714,30 @@ if (pages.length === 0) {
     const toolbar = document.createElement("div");
     toolbar.className = "frise-toolbar";
     root.appendChild(toolbar);
+
+    const friseControle = document.createElement("div");
+    friseControle.className = "frise-controle";
+
+    const friseLabel = document.createElement("label");
+    friseLabel.textContent = "Frise à afficher";
+
+    const friseSelect = document.createElement("select");
+
+    for (const frise of FRISES) {
+        friseSelect.appendChild(
+            new Option(frise.nom, frise.id)
+        );
+    }
+
+    friseControle.appendChild(friseLabel);
+    friseControle.appendChild(friseSelect);
+    toolbar.appendChild(friseControle);
+
+    const afficherBouton = document.createElement("button");
+    afficherBouton.type = "button";
+    afficherBouton.className = "frise-bouton";
+    afficherBouton.textContent = "Afficher cette frise";
+    toolbar.appendChild(afficherBouton);
 
     const rechercheControle = document.createElement("div");
     rechercheControle.className = "frise-controle";
@@ -602,11 +765,22 @@ if (pages.length === 0) {
         new Option("Toutes les civilisations", "Toutes")
     );
 
-    for (const civilisation of civilisations) {
-        civilisationSelect.appendChild(
-            new Option(civilisation, civilisation)
+    function remplirCivilisations() {
+        civilisationSelect.replaceChildren(
+            new Option("Toutes les civilisations", "Toutes")
         );
+
+        for (
+            const civilisation of
+            civilisationsDeLaFrise(etat.friseId)
+        ) {
+            civilisationSelect.appendChild(
+                new Option(civilisation, civilisation)
+            );
+        }
     }
+
+    remplirCivilisations();
 
     civilisationControle.appendChild(civilisationLabel);
     civilisationControle.appendChild(civilisationSelect);
@@ -676,7 +850,8 @@ if (pages.length === 0) {
     function obtenirPeriodesFiltrees() {
         const recherche = normaliser(etat.recherche);
 
-        return periodes.filter(periode => {
+        return periodesDeLaFrise(etat.friseId)
+            .filter(periode => {
             const civilisationValide =
                 etat.civilisation === "Toutes" ||
                 periode.civilisation === etat.civilisation;
@@ -700,10 +875,13 @@ if (pages.length === 0) {
        est calculé à partir de ses périodes uniquement.
     */
     function calculerDomaine(periodesFiltrees) {
+        const periodesActives =
+            periodesDeLaFrise(etat.friseId);
+
         const periodesDuDomaine =
             etat.civilisation === "Toutes"
-                ? periodes
-                : periodes.filter(
+                ? periodesActives
+                : periodesActives.filter(
                     periode =>
                         periode.civilisation ===
                         etat.civilisation
@@ -722,11 +900,8 @@ if (pages.length === 0) {
             ...source.map(periode => periode.fin)
         );
 
-        const etendue = Math.max(1, fin - debut);
-        const marge = Math.max(10, etendue * 0.06);
-
-        debut -= marge;
-        fin += marge;
+        debut -= 50;
+        fin += 50;
 
         return { debut, fin };
     }
@@ -737,6 +912,10 @@ if (pages.length === 0) {
 
     function afficherPanneau() {
         panneau.replaceChildren();
+        layout.classList.toggle(
+            "frise-layout-sans-panneau",
+            !etat.selection
+        );
 
         if (!etat.selection) {
             const vide = document.createElement("div");
@@ -755,20 +934,15 @@ if (pages.length === 0) {
 
         const dates = document.createElement("div");
         dates.className = "frise-panneau-dates";
-        dates.textContent =
-            `${afficherAnnee(periode.debut)} — ` +
-            `${afficherAnnee(periode.fin)}`;
+        dates.textContent = periode.type === "date"
+            ? afficherDate(periode.dateOriginale)
+            : `${afficherAnnee(periode.debut)} — ` +
+              `${afficherAnnee(periode.fin)}`;
 
         const civilisation = document.createElement("div");
         civilisation.className = "frise-panneau-ligne";
         civilisation.textContent =
             `Civilisation : ${periode.civilisation}`;
-
-        const duree = document.createElement("div");
-        duree.className = "frise-panneau-ligne";
-        duree.textContent =
-            `Durée approximative : ` +
-            `${Math.abs(periode.fin - periode.debut)} ans`;
 
         const resume = document.createElement("div");
         resume.className = "frise-panneau-resume";
@@ -777,7 +951,16 @@ if (pages.length === 0) {
         panneau.appendChild(titre);
         panneau.appendChild(dates);
         panneau.appendChild(civilisation);
-        panneau.appendChild(duree);
+
+        if (periode.type === "periode") {
+            const duree = document.createElement("div");
+            duree.className = "frise-panneau-ligne";
+            duree.textContent =
+                `Durée approximative : ` +
+                `${Math.abs(periode.fin - periode.debut)} ans`;
+            panneau.appendChild(duree);
+        }
+
         panneau.appendChild(resume);
 
         if (periode.detaille) {
@@ -800,11 +983,11 @@ if (pages.length === 0) {
         ouvrir.className = "frise-ouvrir-note";
         ouvrir.textContent = "Ouvrir la fiche Obsidian";
 
-        ouvrir.addEventListener("click", () => {
+        ouvrir.addEventListener("click", event => {
             app.workspace.openLinkText(
                 periode.fichier.path,
                 dv.current().file.path,
-                false
+                event.ctrlKey || event.metaKey
             );
         });
 
@@ -884,6 +1067,45 @@ if (pages.length === 0) {
             }
         });
     }
+
+    /*
+       Les crans rapides sont regroupés sur une seule image.
+       Cela laisse au rendu précédent le temps de restaurer le
+       scroll avant de calculer la position du zoom suivant.
+    */
+    zoneFrise.addEventListener(
+        "wheel",
+        event => {
+            if (!event.ctrlKey) {
+                return;
+            }
+
+            event.preventDefault();
+
+            zoomMoletteEnAttente +=
+                event.deltaY < 0 ? 1 : -1;
+            ancrageZoomClientX = event.clientX;
+
+            if (animationZoomMolette !== null) {
+                return;
+            }
+
+            animationZoomMolette = requestAnimationFrame(() => {
+                const pas = zoomMoletteEnAttente;
+                const ancrage = ancrageZoomClientX;
+
+                zoomMoletteEnAttente = 0;
+                ancrageZoomClientX = null;
+                animationZoomMolette = null;
+
+                changerZoom(
+                    etat.zoom + pas * ZOOM_PAS,
+                    ancrage
+                );
+            });
+        },
+        { passive: false }
+    );
 
     /* =====================================================
        RENDU
@@ -1093,61 +1315,72 @@ if (pages.length === 0) {
                                 etendueTransformee
                             ) * 100;
 
-                        const bloc =
-                            document.createElement("button");
+                        const estDate = periode.type === "date";
+                        const bloc = document.createElement("button");
 
                         bloc.type = "button";
-                        bloc.className = "frise-periode";
+                        bloc.className = estDate
+                            ? "frise-date"
+                            : "frise-periode";
                         bloc.style.left = `${position}%`;
-                        bloc.style.width =
-                            `${Math.max(largeur, 0.12)}%`;
-                        bloc.style.background = periode.couleur;
 
-                        bloc.title =
-                            `${periode.nom}\n` +
-                            `${afficherAnnee(periode.debut)} – ` +
-                            `${afficherAnnee(periode.fin)}\n\n` +
-                            periode.resume;
-
-                        const titre =
-                            document.createElement("span");
-
-                        titre.className =
-                            "frise-periode-titre";
-
-                        const nomPeriode =
-                            document.createElement("span");
-
-                        nomPeriode.className =
-                            "frise-periode-nom";
-
-                        nomPeriode.textContent = periode.nom;
-
-                        titre.appendChild(nomPeriode);
-
-                        if (periode.detaille) {
-                            const pastille =
-                                document.createElement("span");
-
-                            pastille.className =
-                                "frise-pastille-detail";
-
-                            pastille.title = "Fiche détaillée";
-                            titre.appendChild(pastille);
+                        if (!estDate) {
+                            bloc.style.width =
+                                `${Math.max(largeur, 0.12)}%`;
                         }
 
-                        const dates =
-                            document.createElement("span");
+                        bloc.style.background = periode.couleur;
 
-                        dates.className =
-                            "frise-periode-dates";
+                        bloc.title = estDate
+                            ? `${periode.nom}\n` +
+                              `${afficherDate(periode.dateOriginale)}\n\n` +
+                              periode.resume
+                            : `${periode.nom}\n` +
+                              `${afficherAnnee(periode.debut)} – ` +
+                              `${afficherAnnee(periode.fin)}\n\n` +
+                              periode.resume;
 
-                        dates.textContent =
-                            `${afficherAnnee(periode.debut)} – ` +
-                            `${afficherAnnee(periode.fin)}`;
+                        if (!estDate) {
+                            const titre =
+                                document.createElement("span");
 
-                        bloc.appendChild(titre);
-                        bloc.appendChild(dates);
+                            titre.className =
+                                "frise-periode-titre";
+
+                            const nomPeriode =
+                                document.createElement("span");
+
+                            nomPeriode.className =
+                                "frise-periode-nom";
+
+                            nomPeriode.textContent = periode.nom;
+
+                            titre.appendChild(nomPeriode);
+
+                            if (periode.detaille) {
+                                const pastille =
+                                    document.createElement("span");
+
+                                pastille.className =
+                                    "frise-pastille-detail";
+
+                                pastille.title = "Fiche détaillée";
+                                titre.appendChild(pastille);
+                            }
+
+                            const dates =
+                                document.createElement("span");
+
+                            dates.className =
+                                "frise-periode-dates";
+
+                            dates.textContent =
+                                `${afficherAnnee(periode.debut)} – ` +
+                                `${afficherAnnee(periode.fin)}`;
+
+                            bloc.appendChild(titre);
+                            bloc.appendChild(dates);
+                        }
 
                         bloc.addEventListener("click", () => {
                             /*
@@ -1191,7 +1424,7 @@ if (pages.length === 0) {
         informations.className = "frise-informations";
 
         informations.textContent =
-            `${periodesFiltrees.length} période(s) affichée(s) — ` +
+            `${periodesFiltrees.length} élément(s) affiché(s) — ` +
             `${afficherAnnee(domaine.debut)} à ` +
             `${afficherAnnee(domaine.fin)}.`;
 
@@ -1215,34 +1448,26 @@ if (pages.length === 0) {
             zoneFrise.appendChild(compression);
         }
 
-        /*
-           Ctrl + molette :
-           le point situé sous la souris reste approximativement
-           à la même position pendant le zoom.
-        */
-        scroll.addEventListener(
-            "wheel",
-            event => {
-                if (!event.ctrlKey) {
-                    return;
-                }
-
-                event.preventDefault();
-
-                const direction =
-                    event.deltaY < 0 ? 1 : -1;
-
-                changerZoom(
-                    etat.zoom + direction * ZOOM_PAS,
-                    event.clientX
-                );
-            },
-            { passive: false }
-        );
-
         requestAnimationFrame(() => {
             if (typeof options.apresAffichage === "function") {
                 options.apresAffichage(scroll);
+            } else if (Number.isFinite(options.centrerAnnee)) {
+                const positionAnnee =
+                    (
+                        transformerAnnee(options.centrerAnnee) -
+                        debutTransforme
+                    ) /
+                    etendueTransformee *
+                    largeurChronologie;
+
+                const largeurChronologieVisible =
+                    scroll.clientWidth - LARGEUR_LABEL;
+
+                scroll.scrollLeft =
+                    positionAnnee -
+                    largeurChronologieVisible / 2;
+
+                etat.scrollLeft = scroll.scrollLeft;
             } else {
                 scroll.scrollLeft = etat.scrollLeft;
             }
@@ -1254,6 +1479,25 @@ if (pages.length === 0) {
        ===================================================== */
 
     let minuterieRecherche;
+
+    afficherBouton.addEventListener("click", () => {
+        etat.friseId = friseSelect.value;
+        etat.zoom = 1;
+        etat.recherche = "";
+        etat.civilisation = "Toutes";
+        etat.selection = null;
+        etat.scrollLeft = 0;
+        etat.lignesRepliees.clear();
+
+        rechercheInput.value = "";
+        zoomInput.value = "1";
+        zoomValeur.textContent = "100 %";
+        remplirCivilisations();
+        civilisationSelect.value = "Toutes";
+
+        afficherPanneau();
+        afficherFrise({ centrerAnnee: 0 });
+    });
 
     rechercheInput.addEventListener("input", event => {
         clearTimeout(minuterieRecherche);
@@ -1277,11 +1521,7 @@ if (pages.length === 0) {
         zoomInput.value = "1";
         zoomValeur.textContent = "100 %";
 
-        afficherFrise({
-            apresAffichage: scroll => {
-                scroll.scrollLeft = 0;
-            }
-        });
+        afficherFrise({ centrerAnnee: 0 });
     });
 
     zoomInput.addEventListener("input", event => {
@@ -1301,6 +1541,7 @@ if (pages.length === 0) {
         etat.scrollLeft = 0;
         etat.lignesRepliees.clear();
 
+        friseSelect.value = etat.friseId;
         rechercheInput.value = "";
         civilisationSelect.value = "Toutes";
         zoomInput.value = "1";
@@ -1308,11 +1549,7 @@ if (pages.length === 0) {
 
         afficherPanneau();
 
-        afficherFrise({
-            apresAffichage: scroll => {
-                scroll.scrollLeft = 0;
-            }
-        });
+        afficherFrise({ centrerAnnee: 0 });
     });
 
     /* =====================================================
@@ -1320,6 +1557,6 @@ if (pages.length === 0) {
        ===================================================== */
 
     afficherPanneau();
-    afficherFrise();
+    afficherFrise({ centrerAnnee: 0 });
 }
 ```

@@ -12,4 +12,4 @@ detaille: non
 - Après l'empire Maurya, c'est l'empire Sunga qui tient le nord de l'Inde. (osef)
 - puis Kouchan, Indo Scythe, ... (osef)
 - Puis en 319 la dynastie Gupta fonde un empire dans la pleine du Gange
-- L'empire Gupta déclin petit à petit et ça finit encore un découpage de pleine de petits royaumes
+- L'empire Gupta décline petit à petit et ça finit encore un découpage de pleine de petits royaumes

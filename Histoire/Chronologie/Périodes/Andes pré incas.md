@@ -11,4 +11,4 @@ detaille: non
 ---
 - De -3000 à -1800 : Caral au Pérou
 - De -900 à -200 : Chavin au même endroit
-- Puis Nazca, Huari, ... osef en vrai
+- Puis Nazca, Huari, Tiwanaku mais tout le monde finit par disparaitre.

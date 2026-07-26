@@ -1,6 +1,6 @@
 ---
 type: periode
-civilisation: Hittites
+civilisation: Turquie
 nom: Hittites
 debut: -2000
 fin: -1180
