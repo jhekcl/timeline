@@ -24,4 +24,10 @@ detaille: non
 - Plus tard les serbes et les croates reprennent du terrain.
 - Ils repoussent les Russes en 1043 grâce au feu grégeois.
 - L'arrivée des Normands sur les territoires byzantins au sud de l'Italie marque la séparation nette entre les catholiques d'occident et les orthodoxes d'orient.
-- En 1071, la défaite à la bataille de Mantizikert en 1071 contre les Seldjoukides. Ces derniers s'emparent de Nicée tout proche de Constantinople en 1077
+- En 1071, la défaite à la bataille de Mantizikert en 1071 contre les Seldjoukides. Ces derniers s'emparent de Nicée tout proche de Constantinople en 1077.
+- La première croisade de 1095 et la prise des Nicée par les occidentaux en 1097 permet aux Byzantins de reprendre du terrain en Anatolie.
+- La Serbie et le royaume Arménien sont repris mais Venise et les Petchenègues leurs cassent la gueule.
+- La Serbie, les Arméniens et les Bulgares reviennent, le Sultanat de Roum est très dangereux.
+- Pendant la 3e croisade de 1189, Richard Coeur de Lion (Angleterre) prend Chypre et y fonde un état latin.
+- Pendant la 4e croisade lancée en 1198, à l'aide de la flotte Vénitienne c'est Constantinople qui tombe pour la première fois en 1204. 
+- L'empire est alors démembré avec des Etats Latins qui contrôlent tout le centre et les Vénitiens qui contrôlent les îles.
