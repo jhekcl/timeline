@@ -4,7 +4,7 @@ civilisation: Pologne
 nom: Naissance Pologne
 debut: 955
 fin: 1138
-couleur: "#5b9c72"
+couleur: "#AEBA34"
 resume:
 ordre: "340"
 detaille: non

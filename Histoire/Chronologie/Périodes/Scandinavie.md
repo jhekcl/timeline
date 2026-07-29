@@ -4,7 +4,7 @@ civilisation: Scandinavie
 nom: Scandinavie
 debut: 872
 fin: 1047
-couleur: "#5b9c72"
+couleur: "#10690E"
 resume:
 ordre: "330"
 detaille: non

@@ -410,13 +410,19 @@ if (pages.length === 0) {
         }
 
         .frise-ouvrir-note {
-            width: 100%;
-            margin-top: 14px;
-            padding: 8px 10px;
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 1000;
+            width: auto;
+            max-width: calc(100vw - 48px);
+            margin: 0;
+            padding: 10px 14px;
             border: none;
             border-radius: 7px;
             background: var(--interactive-accent);
             color: var(--text-on-accent);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
             cursor: pointer;
             font-weight: 600;
         }
@@ -691,21 +697,105 @@ if (pages.length === 0) {
        ÉTAT
        ===================================================== */
 
-    const etat = {
+    const CLE_ETAT =
+        `frise-chronologique:${dv.current().file.path}`;
+
+    const etatParDefaut = {
         friseId: FRISES[0].id,
         zoom: 1,
         recherche: "",
         civilisation: "Toutes",
         selection: null,
         lignesRepliees: new Set(),
-        scrollLeft: 0
+        scrollLeft: 0,
+        scrollTopPage: 0
     };
+
+    let etatRestaure = null;
+
+    try {
+        etatRestaure = JSON.parse(
+            sessionStorage.getItem(CLE_ETAT) || "null"
+        );
+    } catch (erreur) {
+        console.warn("Impossible de restaurer la frise", erreur);
+    }
+
+    const etat = {
+        ...etatParDefaut,
+        ...(etatRestaure || {}),
+        selection: periodes.find(
+            periode =>
+                periode.fichier.path ===
+                etatRestaure?.selectionPath
+        ) || null,
+        lignesRepliees: new Set(
+            etatRestaure?.lignesRepliees || []
+        )
+    };
+
+    if (!FRISES.some(frise => frise.id === etat.friseId)) {
+        etat.friseId = FRISES[0].id;
+    }
+
+    etat.zoom = Math.min(
+        ZOOM_MAX,
+        Math.max(ZOOM_MIN, Number(etat.zoom) || 1)
+    );
 
     let scrollActuel = null;
     let blocsActuels = [];
     let zoomMoletteEnAttente = 0;
     let ancrageZoomClientX = null;
     let animationZoomMolette = null;
+
+    function trouverDefilementPage() {
+        let element = root.parentElement;
+
+        while (element) {
+            const styleElement = getComputedStyle(element);
+            const peutDefiler =
+                /(auto|scroll)/.test(styleElement.overflowY) &&
+                element.scrollHeight > element.clientHeight;
+
+            if (peutDefiler) {
+                return element;
+            }
+
+            element = element.parentElement;
+        }
+
+        return root.closest(".markdown-reading-view");
+    }
+
+    function sauvegarderEtat() {
+        sauvegarderScroll();
+
+        const defilementPage = trouverDefilementPage();
+
+        if (defilementPage) {
+            etat.scrollTopPage = defilementPage.scrollTop;
+        }
+
+        try {
+            sessionStorage.setItem(
+                CLE_ETAT,
+                JSON.stringify({
+                    friseId: etat.friseId,
+                    zoom: etat.zoom,
+                    recherche: etat.recherche,
+                    civilisation: etat.civilisation,
+                    selectionPath:
+                        etat.selection?.fichier.path || null,
+                    lignesRepliees: [...etat.lignesRepliees],
+                    scrollLeft: etat.scrollLeft,
+                    scrollTopPage: etat.scrollTopPage
+                })
+            );
+        } catch (erreur) {
+            console.warn("Impossible de sauvegarder la frise", erreur);
+        }
+    }
 
     /* =====================================================
        BARRE D'OUTILS
@@ -984,6 +1074,7 @@ if (pages.length === 0) {
         ouvrir.textContent = "Ouvrir la fiche Obsidian";
 
         ouvrir.addEventListener("click", event => {
+            sauvegarderEtat();
             app.workspace.openLinkText(
                 periode.fichier.path,
                 dv.current().file.path,
@@ -1199,6 +1290,9 @@ if (pages.length === 0) {
         zoneFrise.appendChild(scroll);
 
         scrollActuel = scroll;
+        scroll.addEventListener("scroll", () => {
+            etat.scrollLeft = scroll.scrollLeft;
+        }, { passive: true });
 
         /*
            Axe : les repères restent calculés en années réelles,
@@ -1390,6 +1484,7 @@ if (pages.length === 0) {
                             etat.selection = periode;
                             afficherPanneau();
                             actualiserSelectionVisuelle();
+                            sauvegarderEtat();
                         });
 
                         blocsActuels.push({
@@ -1556,7 +1651,42 @@ if (pages.length === 0) {
        PREMIER AFFICHAGE
        ===================================================== */
 
+    friseSelect.value = etat.friseId;
+    rechercheInput.value = etat.recherche;
+    zoomInput.value = String(etat.zoom);
+    zoomValeur.textContent =
+        `${Math.round(etat.zoom * 100)} %`;
+    remplirCivilisations();
+
+    if (
+        civilisationsDeLaFrise(etat.friseId)
+            .includes(etat.civilisation)
+    ) {
+        civilisationSelect.value = etat.civilisation;
+    } else {
+        etat.civilisation = "Toutes";
+        civilisationSelect.value = "Toutes";
+    }
+
     afficherPanneau();
-    afficherFrise({ centrerAnnee: 0 });
+    afficherFrise(
+        etatRestaure ? {} : { centrerAnnee: 0 }
+    );
+
+    if (etatRestaure) {
+        const restaurerDefilementPage = () => {
+            const defilementPage = trouverDefilementPage();
+
+            if (defilementPage) {
+                defilementPage.scrollTop =
+                    Number(etat.scrollTopPage) || 0;
+            }
+        };
+
+        requestAnimationFrame(() => {
+            requestAnimationFrame(restaurerDefilementPage);
+        });
+        setTimeout(restaurerDefilementPage, 150);
+    }
 }
 ```

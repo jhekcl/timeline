@@ -4,7 +4,7 @@ civilisation: Hongrie et Croatie et Serbie
 nom: Hongrie et Croatie et Serbie
 debut: 925
 fin: 1115
-couleur: "#5b9c72"
+couleur: "#6E4E34"
 resume:
 ordre: "315"
 ---

@@ -3,7 +3,7 @@ type: periode
 civilisation: Byzantins
 nom: Empire Byzantin
 debut: 476
-fin: 1500
+fin: 1453
 couleur: "#AB008D"
 resume: L'empire romain d'orient mais sous un autre nom
 ordre: "170"
@@ -31,3 +31,10 @@ detaille: non
 - Pendant la 3e croisade de 1189, Richard Coeur de Lion (Angleterre) prend Chypre et y fonde un état latin.
 - Pendant la 4e croisade lancée en 1198, à l'aide de la flotte Vénitienne c'est Constantinople qui tombe pour la première fois en 1204. 
 - L'empire est alors démembré avec des Etats Latins qui contrôlent tout le centre et les Vénitiens qui contrôlent les îles.
+- En 1261, après avoir repris le Thessalonique, les byzantins reprennent tranquillement Constantinople.
+- A la fin du XIIIe, le Sultanat de Roum se fait découper par les mongols et se décompose en Beylicats turcs.
+- Ces beylicats s'emparent de pratiquement toute l'Anatolie.
+- En 1299, parmi ces beylicats, celui d'Osman Ier fonde la dynastie des ottomans.
+- L'empire Serbe profite de l'affaiblissement des Byzantins en progressant largement vers le sud mais cet empire s'effondre rapidement et c'est les ottomans qui, en remportant en 1371 la bataille de Martiza, récupèrent une bonne part des Balkans. Ces derniers prennent également les territoires Serbes, Bulgares et les Beylicats turcs. 
+- L'empire byzantin est réduit à la ville de Constantinople.
+- En 1453, les turcs prennent Constantinople qui devient alors Istanbul. Le seul vestige restant de l'empire romain est l'empire de Trébizonde au sud est de la mer noir mais ce dernier tombe également en 1461.
