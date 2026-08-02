@@ -14,3 +14,5 @@ detaille: non
 - La querelle des investitures (entre l'empereur et le pape) est lancée en 1075 et c'est le pape qui gagne en 1122 avec le concordat de Worms.
 - En 1155, Frédéric Barberousse monte sur le trône. Il récupère du terrains sur les slaves et affirme son autorité sur le royaume des deux Bourgognes. Il perd cependant le contrôle de l'Italie.
 - Henri VI puis Frédéric II reprennent le contrôle de la Sicile en 1194. Cependant le reste de l'Italie est plus dure car il y a une guerre ouverte entre le Saint Empire Germanique et le pape. L'empire est alors divisé en 2 camps : les Guelfes (pour le pape) et les Gibelins (pour l'empereur). A la mort de Frédéric II en 1250 tout se fragmente et fin de l'autorité de l'empire.
+- En 1517, Martin Luther est à l'origine du protestantisme. Il se fait bannir et excommunier en 1521 ce qui lui donne de la visibilité.
+- En 1545, les catholiques lancent le concile de trente qui débouche sur la Contre réforme.

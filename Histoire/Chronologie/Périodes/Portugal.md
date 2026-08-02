@@ -4,9 +4,9 @@ civilisation: Portugal
 nom: Portugal
 debut: 1415
 fin: 1578
-couleur: "#5b9c72"
+couleur: "#3A3673"
 resume:
-ordre: "420"
+ordre: "285"
 ---
 - Les Portugais posent des comptoirs le long de l'Afrique et de l'Océan Pacifique. Vasco de Gama atteint en 1498 les Indes par la mer.
 - En 1500, Cabral découvre le Brésil qui est légitime puisqu'il respecte le traité de Tordesillas. 

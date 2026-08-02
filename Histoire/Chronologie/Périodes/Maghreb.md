@@ -14,7 +14,7 @@ detaille: non
 - EN 1086 ils récupèrent les territoires musulmans en Espagne à savoir la moitié sud du pays.
 - La prise de Marrakech en 1147 par les Almohades met fin aux Almoravides.
 - Ces derniers récupèrent le territoire des Hammadides et encore plus loin sur la côte.
-- Victoire à la bataille d'Alarcos en 1195 contre la Castille sauf que ça booste la reconquista et la tendance est renversée.
+- Victoire à la bataille d'Alarcos en 1195 contre la Castille sauf que ça booste la Reconquista et la tendance est renversée.
 - Défaite à la bataille de las Navas de Tolosa en 1212.
 - Le royaume faiblit et commence à se décomposer : Les Mérinides puis les Zianides et enfin les Hafside (ouest > est) prennent leurs indépendances.
 - En 1269 les Mérinides prennent Marrakech et c'est la fin des Almohades.
