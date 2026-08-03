@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Turquie
+groupe: Moyen Orient
 nom: Hittites
 debut: -2000
 fin: -1180

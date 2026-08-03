@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Perse
+groupe: Moyen Orient
 nom: Timourides
 debut: 1271
 fin: 1510

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Chine
+groupe: Asie
 nom: Tang
 debut: 618
 fin: 907

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Phéniciens
+groupe: Moyen Orient
 nom: Phéniciens
 debut: -1200
 fin: -572

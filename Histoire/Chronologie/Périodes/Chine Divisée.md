@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Chine
+groupe: Asie
 nom: Division
 debut: 220
 fin: 618

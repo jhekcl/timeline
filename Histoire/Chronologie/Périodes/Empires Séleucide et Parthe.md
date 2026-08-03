@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Perse
+groupe: Moyen Orient
 nom: Empires Séleucide et Parthe
 debut: -280
 fin: 224

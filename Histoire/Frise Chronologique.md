@@ -17,6 +17,18 @@ const FRISES = [
     }
 ];
 
+const ORDRE_GROUPES = [
+    "Europe",
+    "Moyen Orient",
+    "Asie",
+    "Océanie",
+    "Afrique du Nord",
+    "Afrique Subsaharienne",
+    "Amerique du Nord",
+    "Amerique centrale",
+    "Amerique du sud"
+];
+
 const pages = FRISES.flatMap(frise =>
     dv.pages(`"${frise.dossier}"`)
         .array()
@@ -54,6 +66,20 @@ if (pages.length === 0) {
     if (previewSizer) {
         previewSizer.style.maxWidth = "none";
         previewSizer.style.width = "100%";
+    }
+
+    /*
+       Obsidian applique aussi sa largeur de lecture aux blocs qui
+       entourent Dataview. On neutralise cette limite jusqu'au sizer
+       pour que la frise utilise toute la largeur disponible.
+    */
+    let conteneurLargeur = dv.container;
+
+    while (conteneurLargeur && conteneurLargeur !== previewSizer) {
+        conteneurLargeur.style.width = "100%";
+        conteneurLargeur.style.maxWidth = "none";
+        conteneurLargeur.style.boxSizing = "border-box";
+        conteneurLargeur = conteneurLargeur.parentElement;
     }
 
     const root = document.createElement("div");
@@ -147,22 +173,13 @@ if (pages.length === 0) {
         }
 
         .frise-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) 290px;
-            gap: 14px;
-            align-items: start;
             width: 100%;
-        }
-
-        .frise-layout-sans-panneau {
-            grid-template-columns: minmax(0, 1fr);
-        }
-
-        .frise-layout-sans-panneau .frise-panneau {
-            display: none;
+            max-width: none;
         }
 
         .frise-zone {
+            width: 100%;
+            max-width: none;
             min-width: 0;
         }
 
@@ -220,6 +237,35 @@ if (pages.length === 0) {
         .frise-ligne {
             min-height: 38px;
             margin: 1px 0;
+        }
+
+        .frise-groupe {
+            display: grid;
+            grid-template-columns: ${LARGEUR_LABEL}px 1fr;
+            min-height: 34px;
+            margin-top: 8px;
+            border-top: 1px solid var(--background-modifier-border);
+            border-bottom: 1px solid var(--background-modifier-border);
+            background: var(--background-secondary);
+        }
+
+        .frise-groupe-nom {
+            position: sticky;
+            left: 0;
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            padding: 6px 9px;
+            border-right: 1px solid var(--background-modifier-border);
+            background: var(--background-secondary);
+            color: var(--text-accent);
+            font-size: 12px;
+            font-weight: 750;
+            letter-spacing: 0.02em;
+        }
+
+        .frise-groupe-piste {
+            background: var(--background-secondary);
         }
 
         .frise-ligne-label {
@@ -296,12 +342,6 @@ if (pages.length === 0) {
             filter: brightness(1.1);
         }
 
-        .frise-periode-selectionnee {
-            z-index: 6;
-            outline: 2px solid var(--interactive-accent);
-            outline-offset: -2px;
-        }
-
         .frise-date {
             position: absolute;
             top: 50%;
@@ -320,10 +360,6 @@ if (pages.length === 0) {
             z-index: 7;
             filter: brightness(1.15);
             transform: translate(-50%, -50%) scale(1.18);
-        }
-
-        .frise-date.frise-periode-selectionnee {
-            outline-offset: 2px;
         }
 
         .frise-periode-titre {
@@ -362,71 +398,6 @@ if (pages.length === 0) {
             background: rgba(255, 255, 255, 0.9);
         }
 
-        .frise-panneau {
-            position: sticky;
-            top: 16px;
-            min-height: 210px;
-            padding: 14px;
-            border: 1px solid var(--background-modifier-border);
-            border-radius: 9px;
-            background: var(--background-secondary);
-        }
-
-        .frise-panneau-vide {
-            color: var(--text-muted);
-            font-size: 13px;
-        }
-
-        .frise-panneau h3 {
-            margin: 0 0 10px;
-            font-size: 18px;
-        }
-
-        .frise-panneau-dates {
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .frise-panneau-resume {
-            margin: 12px 0;
-            line-height: 1.5;
-        }
-
-        .frise-panneau-ligne {
-            margin: 5px 0;
-            color: var(--text-muted);
-            font-size: 12px;
-        }
-
-        .frise-panneau-detaille {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-top: 7px;
-            padding: 3px 7px;
-            border-radius: 999px;
-            background: var(--background-modifier-hover);
-            font-size: 11px;
-        }
-
-        .frise-ouvrir-note {
-            position: fixed;
-            right: 24px;
-            bottom: 24px;
-            z-index: 1000;
-            width: auto;
-            max-width: calc(100vw - 48px);
-            margin: 0;
-            padding: 10px 14px;
-            border: none;
-            border-radius: 7px;
-            background: var(--interactive-accent);
-            color: var(--text-on-accent);
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
-            cursor: pointer;
-            font-weight: 600;
-        }
-
         .frise-informations {
             margin-top: 6px;
             color: var(--text-muted);
@@ -439,15 +410,6 @@ if (pages.length === 0) {
             font-size: 10px;
         }
 
-        @media (max-width: 900px) {
-            .frise-layout {
-                grid-template-columns: 1fr;
-            }
-
-            .frise-panneau {
-                position: static;
-            }
-        }
     `;
 
     root.appendChild(style);
@@ -516,6 +478,28 @@ if (pages.length === 0) {
             "1",
             "x"
         ].includes(valeur);
+    }
+
+    function extraireTags(value) {
+        if (value == null) {
+            return [];
+        }
+
+        if (Array.isArray(value)) {
+            return value
+                .flatMap(item => extraireTags(item))
+                .filter(Boolean);
+        }
+
+        return String(value)
+            .split(/[\s,]+/)
+            .map(tag => normaliser(tag.replace(/^#/, "")))
+            .filter(Boolean);
+    }
+
+    function contientTag(tags, ...noms) {
+        const normalises = noms.map(normaliser);
+        return tags.some(tag => normalises.includes(tag));
     }
 
     function afficherAnnee(annee) {
@@ -647,6 +631,9 @@ if (pages.length === 0) {
             const date = lireAnnee(page.date ?? page.annee);
             const debut = estDate ? date : lireAnnee(page.debut);
             const fin = estDate ? date : lireAnnee(page.fin);
+            const tags = extraireTags(
+                page.tags ?? page.tag ?? page.file?.tags
+            );
 
             return {
                 page,
@@ -661,6 +648,7 @@ if (pages.length === 0) {
                     page.civilisation,
                     "Sans civilisation"
                 ),
+                groupe: texte(page.groupe, "Sans groupe"),
                 debut,
                 fin,
                 couleur: texte(
@@ -672,7 +660,14 @@ if (pages.length === 0) {
                     "Aucun résumé n'a encore été renseigné."
                 ),
                 ordre: nombre(page.ordre),
-                detaille: estOui(page.detaille)
+                detaille: estOui(page.detaille),
+                styleTransparentPointille: contientTag(
+                    tags,
+                    "transparent-pointille",
+                    "transparent_pointille",
+                    "pointille-transparent",
+                    "pointille_transparent"
+                )
             };
         })
         .filter(element =>
@@ -705,7 +700,6 @@ if (pages.length === 0) {
         zoom: 1,
         recherche: "",
         civilisation: "Toutes",
-        selection: null,
         lignesRepliees: new Set(),
         scrollLeft: 0,
         scrollTopPage: 0
@@ -724,11 +718,6 @@ if (pages.length === 0) {
     const etat = {
         ...etatParDefaut,
         ...(etatRestaure || {}),
-        selection: periodes.find(
-            periode =>
-                periode.fichier.path ===
-                etatRestaure?.selectionPath
-        ) || null,
         lignesRepliees: new Set(
             etatRestaure?.lignesRepliees || []
         )
@@ -744,7 +733,6 @@ if (pages.length === 0) {
     );
 
     let scrollActuel = null;
-    let blocsActuels = [];
     let zoomMoletteEnAttente = 0;
     let ancrageZoomClientX = null;
     let animationZoomMolette = null;
@@ -785,8 +773,6 @@ if (pages.length === 0) {
                     zoom: etat.zoom,
                     recherche: etat.recherche,
                     civilisation: etat.civilisation,
-                    selectionPath:
-                        etat.selection?.fichier.path || null,
                     lignesRepliees: [...etat.lignesRepliees],
                     scrollLeft: etat.scrollLeft,
                     scrollTopPage: etat.scrollTopPage
@@ -926,11 +912,7 @@ if (pages.length === 0) {
     const zoneFrise = document.createElement("div");
     zoneFrise.className = "frise-zone";
 
-    const panneau = document.createElement("aside");
-    panneau.className = "frise-panneau";
-
     layout.appendChild(zoneFrise);
-    layout.appendChild(panneau);
     root.appendChild(layout);
 
     /* =====================================================
@@ -948,6 +930,7 @@ if (pages.length === 0) {
 
             const texteRecherche = normaliser([
                 periode.nom,
+                periode.groupe,
                 periode.civilisation,
                 periode.resume
             ].join(" "));
@@ -994,105 +977,6 @@ if (pages.length === 0) {
         fin += 50;
 
         return { debut, fin };
-    }
-
-    /* =====================================================
-       PANNEAU
-       ===================================================== */
-
-    function afficherPanneau() {
-        panneau.replaceChildren();
-        layout.classList.toggle(
-            "frise-layout-sans-panneau",
-            !etat.selection
-        );
-
-        if (!etat.selection) {
-            const vide = document.createElement("div");
-            vide.className = "frise-panneau-vide";
-            vide.textContent =
-                "Clique sur une période pour afficher ses informations.";
-
-            panneau.appendChild(vide);
-            return;
-        }
-
-        const periode = etat.selection;
-
-        const titre = document.createElement("h3");
-        titre.textContent = periode.nom;
-
-        const dates = document.createElement("div");
-        dates.className = "frise-panneau-dates";
-        dates.textContent = periode.type === "date"
-            ? afficherDate(periode.dateOriginale)
-            : `${afficherAnnee(periode.debut)} — ` +
-              `${afficherAnnee(periode.fin)}`;
-
-        const civilisation = document.createElement("div");
-        civilisation.className = "frise-panneau-ligne";
-        civilisation.textContent =
-            `Civilisation : ${periode.civilisation}`;
-
-        const resume = document.createElement("div");
-        resume.className = "frise-panneau-resume";
-        resume.textContent = periode.resume;
-
-        panneau.appendChild(titre);
-        panneau.appendChild(dates);
-        panneau.appendChild(civilisation);
-
-        if (periode.type === "periode") {
-            const duree = document.createElement("div");
-            duree.className = "frise-panneau-ligne";
-            duree.textContent =
-                `Durée approximative : ` +
-                `${Math.abs(periode.fin - periode.debut)} ans`;
-            panneau.appendChild(duree);
-        }
-
-        panneau.appendChild(resume);
-
-        if (periode.detaille) {
-            const detaille = document.createElement("div");
-            detaille.className = "frise-panneau-detaille";
-
-            const pastille = document.createElement("span");
-            pastille.className = "frise-pastille-detail";
-
-            const texteDetaille = document.createElement("span");
-            texteDetaille.textContent = "Fiche détaillée";
-
-            detaille.appendChild(pastille);
-            detaille.appendChild(texteDetaille);
-            panneau.appendChild(detaille);
-        }
-
-        const ouvrir = document.createElement("button");
-        ouvrir.type = "button";
-        ouvrir.className = "frise-ouvrir-note";
-        ouvrir.textContent = "Ouvrir la fiche Obsidian";
-
-        ouvrir.addEventListener("click", event => {
-            sauvegarderEtat();
-            app.workspace.openLinkText(
-                periode.fichier.path,
-                dv.current().file.path,
-                event.ctrlKey || event.metaKey
-            );
-        });
-
-        panneau.appendChild(ouvrir);
-    }
-
-    function actualiserSelectionVisuelle() {
-        for (const element of blocsActuels) {
-            element.bloc.classList.toggle(
-                "frise-periode-selectionnee",
-                etat.selection?.fichier.path ===
-                    element.periode.fichier.path
-            );
-        }
     }
 
     /* =====================================================
@@ -1206,8 +1090,6 @@ if (pages.length === 0) {
         sauvegarderScroll();
 
         zoneFrise.replaceChildren();
-        blocsActuels = [];
-
         const periodesFiltrees = obtenirPeriodesFiltrees();
 
         if (periodesFiltrees.length === 0) {
@@ -1235,24 +1117,42 @@ if (pages.length === 0) {
         const groupes = new Map();
 
         for (const periode of periodesFiltrees) {
-            if (!groupes.has(periode.civilisation)) {
-                groupes.set(periode.civilisation, []);
+            const cleGroupe =
+                `${periode.groupe}\u0000${periode.civilisation}`;
+
+            if (!groupes.has(cleGroupe)) {
+                groupes.set(cleGroupe, []);
             }
 
             groupes
-                .get(periode.civilisation)
+                .get(cleGroupe)
                 .push(periode);
         }
 
         const groupesTries = [...groupes.entries()]
-            .map(([nom, elements]) => ({
-                nom,
+            .map(([cle, elements]) => ({
+                cle,
+                nom: elements[0].civilisation,
                 elements,
+                groupe: elements[0].groupe,
                 ordre: Math.min(
                     ...elements.map(element => element.ordre)
                 )
             }))
             .sort((a, b) => {
+                const ordreGroupeA = ORDRE_GROUPES.indexOf(a.groupe);
+                const ordreGroupeB = ORDRE_GROUPES.indexOf(b.groupe);
+                const rangGroupeA = ordreGroupeA === -1
+                    ? ORDRE_GROUPES.length
+                    : ordreGroupeA;
+                const rangGroupeB = ordreGroupeB === -1
+                    ? ORDRE_GROUPES.length
+                    : ordreGroupeB;
+
+                if (rangGroupeA !== rangGroupeB) {
+                    return rangGroupeA - rangGroupeB;
+                }
+
                 if (a.ordre !== b.ordre) {
                     return a.ordre - b.ordre;
                 }
@@ -1353,9 +1253,34 @@ if (pages.length === 0) {
         axeLigne.appendChild(axe);
         contenu.appendChild(axeLigne);
 
+        const afficherEntetesGroupes = groupesTries.some(
+            groupe => groupe.groupe !== "Sans groupe"
+        );
+        let groupeRegionalPrecedent = null;
+
         for (const groupe of groupesTries) {
+            if (
+                afficherEntetesGroupes &&
+                groupe.groupe !== groupeRegionalPrecedent
+            ) {
+                const enteteGroupe = document.createElement("div");
+                enteteGroupe.className = "frise-groupe";
+
+                const nomGroupe = document.createElement("div");
+                nomGroupe.className = "frise-groupe-nom";
+                nomGroupe.textContent = groupe.groupe;
+
+                const pisteGroupe = document.createElement("div");
+                pisteGroupe.className = "frise-groupe-piste";
+
+                enteteGroupe.appendChild(nomGroupe);
+                enteteGroupe.appendChild(pisteGroupe);
+                contenu.appendChild(enteteGroupe);
+                groupeRegionalPrecedent = groupe.groupe;
+            }
+
             const estReplie =
-                etat.lignesRepliees.has(groupe.nom);
+                etat.lignesRepliees.has(groupe.cle);
 
             const ligne = document.createElement("div");
             ligne.className = "frise-ligne";
@@ -1423,7 +1348,17 @@ if (pages.length === 0) {
                                 `${Math.max(largeur, 0.12)}%`;
                         }
 
-                        bloc.style.background = periode.couleur;
+                        if (
+                            !estDate &&
+                            periode.styleTransparentPointille
+                        ) {
+                            bloc.style.background = "transparent";
+                            bloc.style.border =
+                                `2px dashed ${periode.couleur}`;
+                            bloc.style.color = "var(--text-normal)";
+                        } else {
+                            bloc.style.background = periode.couleur;
+                        }
 
                         bloc.title = estDate
                             ? `${periode.nom}\n` +
@@ -1476,20 +1411,18 @@ if (pages.length === 0) {
                             bloc.appendChild(dates);
                         }
 
-                        bloc.addEventListener("click", () => {
-                            /*
-                               On ne reconstruit pas la frise :
-                               la position horizontale reste inchangée.
-                            */
-                            etat.selection = periode;
-                            afficherPanneau();
-                            actualiserSelectionVisuelle();
-                            sauvegarderEtat();
-                        });
+                        bloc.addEventListener("click", event => {
+                            if (!event.ctrlKey && !event.metaKey) {
+                                return;
+                            }
 
-                        blocsActuels.push({
-                            bloc,
-                            periode
+                            event.preventDefault();
+                            sauvegarderEtat();
+                            app.workspace.openLinkText(
+                                periode.fichier.path,
+                                dv.current().file.path,
+                                true
+                            );
                         });
 
                         piste.appendChild(bloc);
@@ -1499,10 +1432,10 @@ if (pages.length === 0) {
             ligneBouton.addEventListener("click", () => {
                 sauvegarderScroll();
 
-                if (etat.lignesRepliees.has(groupe.nom)) {
-                    etat.lignesRepliees.delete(groupe.nom);
+                if (etat.lignesRepliees.has(groupe.cle)) {
+                    etat.lignesRepliees.delete(groupe.cle);
                 } else {
-                    etat.lignesRepliees.add(groupe.nom);
+                    etat.lignesRepliees.add(groupe.cle);
                 }
 
                 afficherFrise();
@@ -1512,8 +1445,6 @@ if (pages.length === 0) {
             ligne.appendChild(piste);
             contenu.appendChild(ligne);
         }
-
-        actualiserSelectionVisuelle();
 
         const informations = document.createElement("div");
         informations.className = "frise-informations";
@@ -1580,7 +1511,6 @@ if (pages.length === 0) {
         etat.zoom = 1;
         etat.recherche = "";
         etat.civilisation = "Toutes";
-        etat.selection = null;
         etat.scrollLeft = 0;
         etat.lignesRepliees.clear();
 
@@ -1590,7 +1520,6 @@ if (pages.length === 0) {
         remplirCivilisations();
         civilisationSelect.value = "Toutes";
 
-        afficherPanneau();
         afficherFrise({ centrerAnnee: 0 });
     });
 
@@ -1632,7 +1561,6 @@ if (pages.length === 0) {
         etat.zoom = 1;
         etat.recherche = "";
         etat.civilisation = "Toutes";
-        etat.selection = null;
         etat.scrollLeft = 0;
         etat.lignesRepliees.clear();
 
@@ -1641,8 +1569,6 @@ if (pages.length === 0) {
         civilisationSelect.value = "Toutes";
         zoomInput.value = "1";
         zoomValeur.textContent = "100 %";
-
-        afficherPanneau();
 
         afficherFrise({ centrerAnnee: 0 });
     });
@@ -1668,7 +1594,6 @@ if (pages.length === 0) {
         civilisationSelect.value = "Toutes";
     }
 
-    afficherPanneau();
     afficherFrise(
         etatRestaure ? {} : { centrerAnnee: 0 }
     );

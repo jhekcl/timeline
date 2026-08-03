@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Egypte
+groupe: Afrique du Nord
 nom: Ayyoubides
 debut: 1171
 fin: 1250

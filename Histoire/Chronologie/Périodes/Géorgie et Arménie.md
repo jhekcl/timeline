@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Géorgiens et Arméniens
+groupe: Moyen Orient
 nom: Géorgiens et Arméniens
 debut: 786
 fin: 1243

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: France
+groupe: Europe
 nom: Capétiens
 debut: 987
 fin: 1327

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Islam
+groupe: Moyen Orient
 nom: Naissance Islam
 debut: 622
 fin: 661

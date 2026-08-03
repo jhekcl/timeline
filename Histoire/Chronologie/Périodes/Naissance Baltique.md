@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Baltiques
+groupe: Europe
 nom: Naissance Baltique
 debut: 1154
 fin: 1397

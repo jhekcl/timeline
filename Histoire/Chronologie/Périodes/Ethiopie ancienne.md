@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Ethiopie
+groupe: Afrique Subsaharienne
 nom: Ethiopie Ancienne
 debut: 1140
 fin: 1476

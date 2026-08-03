@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Normands
+groupe: Europe
 nom: Normands
 debut: 1029
 fin: 1087

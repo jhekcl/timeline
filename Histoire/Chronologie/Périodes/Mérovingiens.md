@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: France
+groupe: Europe
 nom: Mérovingiens
 debut: 481
 fin: 750

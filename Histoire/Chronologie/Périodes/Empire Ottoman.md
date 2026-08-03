@@ -1,9 +1,10 @@
 ---
 type: periode
 civilisation: Turquie
+groupe: Moyen Orient
 nom: Empire Ottoman
 debut: 1299
-fin: 1566
+fin: 1792
 couleur: "#B04C19"
 resume:
 ordre: "40"
@@ -22,3 +23,9 @@ detaille: non
 - Les Janissaires sont des très jeunes chrétiens capturés, islamisés et deviennent les combattants d'élites.
 - Soliman le magnifique prend Belgrade, rhodes, la Hongrie mais échoue à prendre Vienne du royaume de Bohème. Il prends le Yémen.
 - Il s'allie avec la France contre l'Espagne de Charles Quint qu'il bat à la bataille de Préveza en 1538 ce qui permet de créer la régence de Tripoli en 1561.
+- Soliman meurt en 1566 et Sélim III lui succède.
+- Ce dernier prend Chypre ce qui provoque la colère de la Sainte Ligue et l'empire ottoman subit une défaite navale à la bataille de Lépante en 1571.
+- Tunis est récupéré (ils ont tout le Maghreb jusqu'à Oran).
+- En 1590 l'empire profite de la faiblesse de l'Iran Séfévide pour prendre jusqu'à l'Azerbaidjan.
+- Mais petit à petit, malgré la prise de la crète plusieurs territoires sont perdus, notamment la Hongrie, le Yémen, la Crimée et ceux récupéré en Azerbaidjan. De plus les régences d'Alger, de Tunis, de Tripoli et l'Egypte deviennent de plus en plus indépendantes.
+- 

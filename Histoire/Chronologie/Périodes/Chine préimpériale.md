@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Chine
+groupe: Asie
 nom: Chine préimpériale
 debut: -2200
 fin: -771

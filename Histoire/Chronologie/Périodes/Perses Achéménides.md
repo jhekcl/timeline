@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Perse
+groupe: Moyen Orient
 nom: Achéménides
 debut: -525
 fin: -336

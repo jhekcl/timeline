@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Russie
+groupe: Europe
 nom: Rus de Kiev
 debut: 862
 fin: 980

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+groupe: Europe
 nom: Décadence
 debut: 161
 fin: 337

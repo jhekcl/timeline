@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Angleterre
+groupe: Europe
 nom: Angleterre obscure
 debut: 650
 fin: 964

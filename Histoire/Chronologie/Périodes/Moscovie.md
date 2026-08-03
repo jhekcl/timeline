@@ -1,11 +1,12 @@
 ---
 type: periode
 civilisation: Russie
+groupe: Europe
 nom: Moscovie
 debut: 1371
 fin: 1618
 couleur: "#960073"
-resume: Naissance de la Rus de Kiev
+resume:
 ordre: "290"
 detaille: non
 ---
@@ -21,3 +22,5 @@ detaille: non
 - En 1571 Moscou est mis à sac par les Ottomans
 - En 1598, Fédor Ier meurt et c'est la fin des Riourikides qui étaient au pouvoir depuis 862.
 - Le pays est ensuite marqué par le temps des troubles, entre guerre de succession et famine. Elle subit en même temps la guerre face à la Pologne Lituanie et face à la Suède.
+- En 1613, Michel Ier (qui fonde alors la dynastie des Romanov) monte sur le trône.
+- En 1618, la paix est enfin signée avec la Suède et la PL.

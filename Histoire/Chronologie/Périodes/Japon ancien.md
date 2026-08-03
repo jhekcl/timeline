@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Japon
+groupe: Asie
 nom: Japon ancien
 debut: 250
 fin: 1185

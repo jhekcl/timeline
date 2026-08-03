@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: France
+groupe: Europe
 nom: Carolingiens
 debut: 750
 fin: 987

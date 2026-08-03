@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Maroc
+groupe: Afrique du Nord
 nom: Saadiens
 debut: 1421
 fin: 1659

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Grecs
+groupe: Europe
 nom: Epoque archaïque
 debut: -800
 fin: -550

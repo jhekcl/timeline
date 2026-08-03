@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Chine
+groupe: Asie
 nom: Yuan
 debut: 1276
 fin: 1335

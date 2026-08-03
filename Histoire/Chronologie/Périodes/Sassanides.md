@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Perse
+groupe: Moyen Orient
 nom: Sassanides
 debut: 224
 fin: 651

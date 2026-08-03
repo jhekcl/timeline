@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Espagne
+groupe: Europe
 nom: Reconquista
 debut: 750
 fin: 1492

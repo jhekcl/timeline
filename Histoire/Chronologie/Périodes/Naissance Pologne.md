@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Pologne
+groupe: Europe
 nom: Naissance Pologne
 debut: 955
 fin: 1138

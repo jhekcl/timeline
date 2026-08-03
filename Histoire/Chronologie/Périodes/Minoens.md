@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Minoenne
+groupe: Europe
 nom: Civilisation Minoenne
 debut: -2000
 fin: -1370

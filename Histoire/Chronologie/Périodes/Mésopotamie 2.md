@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Mesopotamie
+groupe: Moyen Orient
 nom: Mésopotamie (premiers empires)
 debut: -2350
 fin: -539

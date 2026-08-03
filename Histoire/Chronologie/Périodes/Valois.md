@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: France
+groupe: Europe
 nom: Valois
 debut: 1327
 fin: 1589

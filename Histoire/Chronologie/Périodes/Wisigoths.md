@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Espagne
+groupe: Europe
 nom: Wisigoths
 debut: 416
 fin: 719

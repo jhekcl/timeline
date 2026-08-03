@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Grecs
+groupe: Europe
 nom: Epoque classique
 debut: -550
 fin: -280
@@ -8,6 +9,7 @@ couleur: "#0C7A99"
 resume: Monde grec après les mycéniens
 ordre: "31"
 detaille: non
+cssclasses:
 ---
 - en -550 la Grèce c'est la Grèce continentale, la côte Ionienne, la Crète et des colonies tout autour de la mer noire et de la mer Méditerranée.
 - La Lydie et son roi Crésus forment une barrière avec les Perses.

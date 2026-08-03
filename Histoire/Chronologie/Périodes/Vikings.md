@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Vikings
+groupe: Europe
 nom: Vikings
 debut: 753
 fin: 1066

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Carthage
+groupe: Afrique du Nord
 nom: Carthage
 debut: -650
 fin: -146

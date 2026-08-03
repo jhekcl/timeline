@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Corée
+groupe: Asie
 nom: Corée ancienne
 debut: -194
 fin: 1356

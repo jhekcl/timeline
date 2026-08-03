@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Scandinavie
+groupe: Europe
 nom: Scandinavie
 debut: 872
 fin: 1047

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Chine
+groupe: Asie
 nom: Han
 debut: -202
 fin: 220

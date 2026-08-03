@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Inde
+groupe: Asie
 nom: Hindouisme et Bouddhisme
 debut: -600
 fin: -185

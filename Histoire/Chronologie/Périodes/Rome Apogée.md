@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+groupe: Europe
 nom: Apogée
 debut: -27
 fin: 161

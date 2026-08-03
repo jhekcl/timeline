@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+groupe: Europe
 nom: Lombards
 debut: 568
 fin: 774

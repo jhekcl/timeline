@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Inde
+groupe: Asie
 nom: Indus
 debut: -2600
 fin: -1900

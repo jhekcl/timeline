@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Indonésie
+groupe: Asie
 nom: Indonésie
 debut: 1400
 fin: 1920

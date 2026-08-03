@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Allemagne
+groupe: Europe
 nom: Saint empire Germanique
 debut: 962
 fin: 2000

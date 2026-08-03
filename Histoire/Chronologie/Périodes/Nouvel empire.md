@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Egypte
+groupe: Afrique du Nord
 nom: Nouvel Empire
 debut: -1535
 fin: -1100

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: France
+groupe: Europe
 nom: Bourbons
 debut: 1589
 fin: 1792

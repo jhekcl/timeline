@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Perse
+groupe: Moyen Orient
 nom: Transition
 debut: 821
 fin: 1037

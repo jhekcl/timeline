@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Ethiopie
+groupe: Afrique Subsaharienne
 nom: Royaume d'Aksoum
 debut: -100
 fin: 640

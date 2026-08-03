@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Islam
+groupe: Afrique du Nord
 nom: Fatimides
 debut: 909
 fin: 1200

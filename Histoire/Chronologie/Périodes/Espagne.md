@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Espagne
+groupe: Europe
 nom: Espagne
 debut: 1492
 fin: 2000

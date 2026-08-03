@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Byzantins
+groupe: Europe
 nom: Empire Byzantin
 debut: 476
 fin: 1453

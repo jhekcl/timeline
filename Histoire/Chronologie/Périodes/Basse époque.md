@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Egypte
+groupe: Afrique du Nord
 nom: Basse époque
 debut: -1100
 fin: -525

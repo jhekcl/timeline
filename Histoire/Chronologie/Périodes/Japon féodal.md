@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Japon
+groupe: Asie
 nom: Japon féodal
 debut: 1185
 fin: 1603

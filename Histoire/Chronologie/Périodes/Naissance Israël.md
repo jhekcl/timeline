@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Israël
+groupe: Moyen Orient
 nom: Naissance Israël
 debut: -1040
 fin: -587

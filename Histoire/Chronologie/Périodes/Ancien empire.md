@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Egypte
+groupe: Afrique du Nord
 nom: Ancien Empire
 debut: -2650
 fin: -2060

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Am. précolombienne
+groupe: Amerique centrale
 nom: Teotihuacan et Mayas
 debut: -400
 fin: 1400

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Egypte
+groupe: Afrique du Nord
 nom: Moyen Empire
 debut: -2060
 fin: -1535

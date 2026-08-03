@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Grecs
+groupe: Europe
 nom: Mycéniens
 debut: -1650
 fin: -1200

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Afrique du Sud
+groupe: Afrique Subsaharienne
 nom: Afrique du Sud
 debut: 1500
 fin: 1920

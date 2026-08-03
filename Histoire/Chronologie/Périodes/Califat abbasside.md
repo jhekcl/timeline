@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Islam
+groupe: Moyen Orient
 nom: Abbassides
 debut: 750
 fin: 861

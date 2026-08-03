@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Islam
+groupe: Moyen Orient
 nom: Omeyyades
 debut: 661
 fin: 750

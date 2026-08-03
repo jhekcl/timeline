@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Ancien Sahel
+groupe: Afrique Subsaharienne
 nom: Ancien Sahel
 debut: 800
 fin: 1590

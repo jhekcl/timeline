@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Asie du sud est
+groupe: Asie
 nom: Asie du sud Est ancien
 debut: 800
 fin: 1400

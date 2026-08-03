@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Mongol
+groupe: Asie
 nom: Empire mongol
 debut: 1200
 fin: 1260

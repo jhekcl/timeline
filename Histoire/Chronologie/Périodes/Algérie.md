@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Algerie
+groupe: Afrique du Nord
 nom: Algérie
 debut: 1500
 fin: 1848

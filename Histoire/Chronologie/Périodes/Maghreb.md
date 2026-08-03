@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Maghreb
+groupe: Afrique du Nord
 nom: Maghreb
 debut: 1040
 fin: 1450

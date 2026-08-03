@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Portugal
+groupe: Europe
 nom: Portugal
 debut: 1415
 fin: 1578

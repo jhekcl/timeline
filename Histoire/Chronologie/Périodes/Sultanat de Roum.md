@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Turquie
+groupe: Moyen Orient
 nom: Sultanat de Roum
 debut: 1077
 fin: 1308

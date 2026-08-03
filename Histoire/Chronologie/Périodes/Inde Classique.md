@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Inde
+groupe: Asie
 nom: Inde Classique
 debut: -185
 fin: 530

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Autriche
+groupe: Europe
 nom: Habsbourg
 debut: 1493
 fin: 1780

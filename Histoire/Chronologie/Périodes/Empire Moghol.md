@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Inde
+groupe: Asie
 nom: Inde des Sultanats
 debut: 1510
 fin: 1757

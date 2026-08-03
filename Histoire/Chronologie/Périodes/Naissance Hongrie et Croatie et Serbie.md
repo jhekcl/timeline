@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Hongrie et Croatie et Serbie
+groupe: Europe
 nom: Hongrie et Croatie et Serbie
 debut: 925
 fin: 1115

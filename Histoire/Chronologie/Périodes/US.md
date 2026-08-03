@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: US
+groupe: Amerique du Nord
 nom: US
 debut: 1776
 fin: 1890

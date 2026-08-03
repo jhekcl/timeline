@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+groupe: Europe
 nom: Liberté Italie
 debut: 1122
 fin: 1440
