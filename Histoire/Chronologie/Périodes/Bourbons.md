@@ -34,3 +34,7 @@ detaille: non
 - L'Espagne des Bourbons doit céder plusieurs territoires aux Habsbourg (en Italie, aux Pays bas, en Suisse, ...) et la France doit céder l'Acadie aux Anglais.
 - Les fortifications de Vauban permettent de tenir bon en France métropolitaine.
 - Louis XIV meurt en 1715.
+- Louis XV le bienaimé car petite période sans guerre lorsqu'un monte sur le trône (d'abord sous la régence du duc d'Orléans)
+- Puis guerre de succession de pologne puis guerre de succession d'Autriche et enfin Guerre de 7 ans.
+- A l'issue de cette guerre de 7 ans, la France a d'abord perdu Quebec et Montréal puis ses posséssions dans les Caraïbes qu'elle récupère finalement en les échangemeant contre la Louisiane.
+- En 1768, après que la Corse soit devenue indépendante du royaume de Gêne en 1755 sous l'impulsion de Pascal Paoli, la France la récupère et bat Paoli en 1769. 
