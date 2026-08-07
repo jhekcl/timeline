@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Am. précolombienne 2
+sous_civilisation: Incas
 groupe: Amerique du sud
 nom: Incas
 debut: 1370

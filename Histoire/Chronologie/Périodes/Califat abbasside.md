@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Islam
+sous_civilisation: Califat abbasside
 groupe: Moyen Orient
 nom: Abbassides
 debut: 750

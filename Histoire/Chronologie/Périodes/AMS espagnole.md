@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Am. précolombienne 2
+sous_civilisation: Amérique du Sud coloniale
 groupe: Amerique du sud
 nom: AMS espagnole
 debut: 1533

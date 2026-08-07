@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Islam
+sous_civilisation: Califat des Rachidoune
 groupe: Moyen Orient
 nom: Naissance Islam
 debut: 622

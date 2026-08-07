@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Grecs
+sous_civilisation: Cités grecques
 groupe: Europe
 nom: Epoque archaïque
 debut: -800

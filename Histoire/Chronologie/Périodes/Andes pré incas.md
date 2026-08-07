@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Am. précolombienne 2
+sous_civilisation: Civilisations andines pré-incas
 groupe: Amerique du sud
 nom: Andes pré incas
 debut: -3000

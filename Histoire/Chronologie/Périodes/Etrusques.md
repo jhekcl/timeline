@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+sous_civilisation: Étrusques
 groupe: Europe
 nom: Etrusques
 debut: -750

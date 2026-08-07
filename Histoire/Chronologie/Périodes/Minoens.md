@@ -1,6 +1,7 @@
 ---
 type: periode
-civilisation: Minoenne
+civilisation: Grecs
+sous_civilisation: Minoens
 groupe: Europe
 nom: Civilisation Minoenne
 debut: -2000

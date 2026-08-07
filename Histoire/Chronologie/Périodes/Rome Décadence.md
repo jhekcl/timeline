@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+sous_civilisation: Rome
 groupe: Europe
 nom: Décadence
 debut: 161

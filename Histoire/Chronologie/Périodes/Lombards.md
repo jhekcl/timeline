@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+sous_civilisation: Lombards
 groupe: Europe
 nom: Lombards
 debut: 568

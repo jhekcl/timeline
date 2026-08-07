@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Grecs
+sous_civilisation: Mycéniens
 groupe: Europe
 nom: Mycéniens
 debut: -1650

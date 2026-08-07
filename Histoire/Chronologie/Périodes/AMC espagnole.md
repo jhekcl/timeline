@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Am. précolombienne
+sous_civilisation: Amérique centrale coloniale
 groupe: Amerique centrale
 nom: AMC espagnole
 debut: 1492

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Islam
+sous_civilisation: Califat fatimide
 groupe: Moyen Orient
 nom: Fatimides
 debut: 909

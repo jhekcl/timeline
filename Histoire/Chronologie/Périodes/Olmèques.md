@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Am. précolombienne
+sous_civilisation: Olmèques
 groupe: Amerique centrale
 nom: Olmèques
 debut: -1200

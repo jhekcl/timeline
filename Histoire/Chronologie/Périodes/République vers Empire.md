@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+sous_civilisation: Rome
 groupe: Europe
 nom: République vers Empire
 debut: -202

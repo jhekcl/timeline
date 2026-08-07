@@ -294,6 +294,29 @@ if (pages.length === 0) {
             text-align: left;
         }
 
+        .frise-ligne-noms {
+            display: flex;
+            min-width: 0;
+            flex-direction: column;
+            line-height: 1.15;
+        }
+
+        .frise-civilisation-parent {
+            overflow: hidden;
+            color: var(--text-muted);
+            font-size: 10px;
+            font-weight: 500;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .frise-sous-civilisation {
+            overflow: hidden;
+            font-size: 12px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
         .frise-ligne-bouton:hover {
             background: var(--background-modifier-hover);
         }
@@ -648,6 +671,11 @@ if (pages.length === 0) {
                     page.civilisation,
                     "Sans civilisation"
                 ),
+                sousCivilisation: texte(
+                    page.sous_civilisation ??
+                    page["sous-civilisation"],
+                    ""
+                ),
                 groupe: texte(page.groupe, "Sans groupe"),
                 debut,
                 fin,
@@ -932,6 +960,7 @@ if (pages.length === 0) {
                 periode.nom,
                 periode.groupe,
                 periode.civilisation,
+                periode.sousCivilisation,
                 periode.resume
             ].join(" "));
 
@@ -1118,7 +1147,8 @@ if (pages.length === 0) {
 
         for (const periode of periodesFiltrees) {
             const cleGroupe =
-                `${periode.groupe}\u0000${periode.civilisation}`;
+                `${periode.groupe}\u0000${periode.civilisation}` +
+                `\u0000${periode.sousCivilisation}`;
 
             if (!groupes.has(cleGroupe)) {
                 groupes.set(cleGroupe, []);
@@ -1132,7 +1162,11 @@ if (pages.length === 0) {
         const groupesTries = [...groupes.entries()]
             .map(([cle, elements]) => ({
                 cle,
-                nom: elements[0].civilisation,
+                nom: elements[0].sousCivilisation ||
+                    elements[0].civilisation,
+                civilisation: elements[0].civilisation,
+                estSousCivilisation:
+                    elements[0].sousCivilisation !== "",
                 elements,
                 groupe: elements[0].groupe,
                 ordre: Math.min(
@@ -1155,6 +1189,17 @@ if (pages.length === 0) {
 
                 if (a.ordre !== b.ordre) {
                     return a.ordre - b.ordre;
+                }
+
+                const comparaisonCivilisation =
+                    a.civilisation.localeCompare(
+                        b.civilisation,
+                        "fr",
+                        { sensitivity: "base" }
+                    );
+
+                if (comparaisonCivilisation !== 0) {
+                    return comparaisonCivilisation;
                 }
 
                 return a.nom.localeCompare(
@@ -1296,11 +1341,33 @@ if (pages.length === 0) {
             chevron.className = "frise-chevron";
             chevron.textContent = estReplie ? "▶" : "▼";
 
-            const nom = document.createElement("span");
-            nom.textContent = groupe.nom;
+            const noms = document.createElement("span");
+            noms.className = "frise-ligne-noms";
+
+            if (groupe.estSousCivilisation) {
+                const civilisationParent =
+                    document.createElement("span");
+
+                civilisationParent.className =
+                    "frise-civilisation-parent";
+                civilisationParent.textContent =
+                    groupe.civilisation;
+
+                const sousCivilisation =
+                    document.createElement("span");
+
+                sousCivilisation.className =
+                    "frise-sous-civilisation";
+                sousCivilisation.textContent = groupe.nom;
+
+                noms.appendChild(civilisationParent);
+                noms.appendChild(sousCivilisation);
+            } else {
+                noms.textContent = groupe.nom;
+            }
 
             ligneBouton.appendChild(chevron);
-            ligneBouton.appendChild(nom);
+            ligneBouton.appendChild(noms);
             labelZone.appendChild(ligneBouton);
 
             const piste = document.createElement("div");

@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Am. précolombienne
+sous_civilisation: Aztèques
 groupe: Amerique centrale
 nom: Aztèques
 debut: 1400

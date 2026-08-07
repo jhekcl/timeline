@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Islam
+sous_civilisation: Califat omeyyade
 groupe: Moyen Orient
 nom: Omeyyades
 debut: 661

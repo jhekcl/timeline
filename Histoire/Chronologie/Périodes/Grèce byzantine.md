@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Grecs
+sous_civilisation: Grecs byzantins
 groupe: Europe
 nom: Grèce byzantine
 debut: 476

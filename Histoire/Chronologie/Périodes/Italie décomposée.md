@@ -1,6 +1,7 @@
 ---
 type: periode
 civilisation: Romains
+sous_civilisation: Communes italiennes
 groupe: Europe
 nom: Liberté Italie
 debut: 1122
