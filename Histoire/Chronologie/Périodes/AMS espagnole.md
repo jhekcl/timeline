@@ -3,8 +3,8 @@ type: periode
 civilisation: Am. précolombienne 2
 groupe: Amerique du sud
 nom: AMS espagnole
-debut: 1572
-fin: 1833
+debut: 1533
+fin: 1826
 couleur: "#828A2B"
 resume:
 ordre: "65"
