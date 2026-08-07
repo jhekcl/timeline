@@ -19,4 +19,8 @@ detaille: non
 - En 1772, la Prusse profite du premier partage de la Pologne pour y prendre tu terrain. 
 - En 1793, deuxième partage de la Pologne
 - En 1795 troisième et dernier départage de la Pologne qui n'existe plus.
-- 
+- En 1833, une union commerciale est créée (Zollverein) avec la Bavière et d'autres petites états allemands
+- En 1861, Guillaume Ier devient roi de Prusse et Otton Von Bismarck et ministre président en 1862.
+- En 1866, sur fond de rivalité sur une annexion au sud du Danemark,  la guerre éclate avec l'Autriche et la prusse bien plus moderne l'emporte.
+- En 1866 beaucoup de territoires allemands sont annexés.
+- Après une victoire contre les Françasi en 1870, l'empire allemand est proclamé le 18 janvier 1871 dans la galerie des glaces. Guillaume Ier est à sa tête et l'Aslace Lorraine est annexée. C'est le IIe Reich.
