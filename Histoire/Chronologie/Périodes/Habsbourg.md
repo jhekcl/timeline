@@ -2,21 +2,21 @@
 type: periode
 civilisation: Autriche
 groupe: Europe
-nom: Habsbourg
+nom: Habsbourg d'Autriche
 debut: 1493
 fin: 1780
 couleur: "#C48908"
-resume:
+resume: Construction de la monarchie des Habsbourg jusqu'à la mort de Marie-Thérèse
 ordre: "380"
 detaille: non
 ---
-- En 1493, Maximilien Ier monte sur le trône d'Autriche. Il a auparavant récupéré par héritage les Pays Bas et la Franche comté. Et en 1508 il est couronné empereur du SGE.
-- En 1516 son petit fils Charles Quint dispose de l'Espagne, du duché de Milan et du Royaume de Naples et de Sicile. En 1520 Maximilien meurt et Charles récupère tout avant de céder l'Autriche à son frère Ferdinand Ier.
-- Le royaume voisin de Bohème et de Hongrie se fait casser la gueule à la bataille de Mohács en 1526 avec la mort du roi ce qui permet à Ferdinand de récupérer le trône.
-- En 1556, Charles Quint meurt et les Habsbourg d'Autriche récupère et vont conserver le titre d'empereur du SGE longtemps.
-- En 1618, la rivalité entre les Catholiques et le Protestants au sein du royaume déclenche la Guerre de Trente ans qui va prendre une ampleur européenne.
-- En 1683, la grande Guerre Turque est déclarée regroupant les royaumes européens en danger face aux Ottomans contre ces derniers. Les Autrichiens finissent par reprendre des gros territoires (Hongrie).
-- La guerre de Succession d'Espagne en 1701 permet aux autrichiens de récupérer leurs terres perdues aux Pays Bas, Milan, Naples et Sardaigne (finalement échangée contre la Sicile aux Savoyards).
-- La Guerre de Succession de Pologne Lituanie opposant à nouveau entre autres la France et l'Autriche est une défaite côté autrichien et ils doivent céder le Royaume de Naples et de Sicile aux Bourbons d'Espagne.
-- Charles VI meurt sans descendance mâle et c'est Marie Thérèse d'Autriche qui récupère le trône.
-- Ils récupèrent des terres sur la Pologne lors du premier départage de celle ci en 1772.
+- Maximilien Ier devient chef de la maison de Habsbourg en 1493. Son mariage avec Marie de Bourgogne lui avait apporté l'essentiel des Pays-Bas bourguignons et la Franche-Comté.
+- Son petit-fils Charles hérite des Pays-Bas en 1506, des couronnes espagnoles en 1516 et des possessions autrichiennes en 1519, année où il est élu empereur sous le nom de Charles Quint.
+- Charles confie rapidement les territoires héréditaires autrichiens à son frère Ferdinand. Après la mort du roi Louis II à Mohács en 1526, Ferdinand revendique les couronnes de Bohême et de Hongrie, mais une grande partie de la Hongrie passe sous domination ottomane.
+- Lors des abdications de Charles Quint en 1555-1556, la maison se divise en deux branches : les Habsbourg d'Espagne et les Habsbourg d'Autriche. Ferdinand devient empereur en 1558.
+- La révolte de Bohême de 1618 déclenche la guerre de Trente Ans. Les traités de Westphalie de 1648 affaiblissent l'autorité impériale dans le Saint-Empire, mais renforcent le pouvoir des Habsbourg dans leurs territoires héréditaires.
+- L'échec ottoman devant Vienne en 1683 ouvre une longue contre-offensive. Le traité de Karlowitz de 1699 donne aux Habsbourg l'essentiel de la Hongrie et de la Croatie.
+- La guerre de Succession d'Espagne ne permet pas aux Habsbourg de reprendre la couronne espagnole, mais ils obtiennent notamment les Pays-Bas méridionaux et plusieurs territoires italiens.
+- Charles VI fait reconnaître la Pragmatique Sanction afin que sa fille Marie-Thérèse puisse hériter. À sa mort en 1740, la Prusse prend la Silésie et déclenche la guerre de Succession d'Autriche.
+- Marie-Thérèse préserve l'essentiel de la monarchie et mène d'importantes réformes administratives et militaires. Son époux François de Lorraine devient empereur en 1745, fondant la maison de Habsbourg-Lorraine.
+- La monarchie participe au premier partage de la Pologne en 1772 et annexe la Galicie. À la mort de Marie-Thérèse en 1780, Joseph II gouverne seul et accélère les réformes.

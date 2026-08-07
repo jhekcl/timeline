@@ -1,26 +1,21 @@
 ---
 type: periode
 civilisation: Afrique du Sud
-groupe: Afrique Subsaharienne
-nom: Afrique du Sud
+groupe: Afrique subsaharienne
+nom: Afrique australe coloniale
 debut: 1500
-fin: 1920
+fin: 1910
 couleur: "#600BB3"
-resume:
+resume: Des sociétés khoïsan et bantouphones à la création de l'Union sud-africaine
 ordre: "450"
 detaille: non
 ---
-- On a des San et des Khoi Khoi à l'ouest et des Tswana, des Sotho, des Xhosa, des Zoulous, des Swazis et des Pedis à l'est.
-- En 1652, la colonie du Cap est fondée par les néerlandais comme étape sur les route des Indes.
-- La langue afrikaans s'impose comme dérivé du néerlandais.
-- Les Guerres cafres entre les colons hollandais et les Xhosa vont durer de 1779 à 1879.
-- En 1795, la révolution Batave en Hollande transforme les Provinces Unies en état satellite français et les Britanniques en profitent pour prendre Le Cap.
-- Ils battent les Xhosa et on distingue 2 populations blanches : les britanniques d'une part et les afrikaners (les boers)
-- Au sein des population bantoues, plein de royaumes se créent : Swazi et Sotho, Zoulou, Gaza (Mozambique), ...
-- En 1833, l'abolition de l'esclavage par les britannique provoque la colère des afrikaners qui font une migration (le Grand Trek) en 1836 et fondent les états état libre d'orange et transvaal. Les britanniques fondent la colonie du Natal sur la cote plus à l'est pour empêcher l'expansion des afrikaners.
-- Le Sotho devient le Basutoland lorsqu'il est conquit par les britanniques.
-- Des grandes villes émergent telles que Kimberley pour son exploitation de diamant dans la colonie du cap, l'or de Johannesburg dans le Transvaal.
-- Les britanniques font des conquêtes au nord sur le Bechuanaland (futur Botswana) puis encore au nord est pour fonder la Rhodésie en 1895.
-- Le Transvaal s'empare du Swaziland.
-- Entre 1898 et 1902, c'est la guerre entre Britanniques et Afrikaners et débouche sur une victoire des colons britanniques.
-- En 1910 c'est la création de l'Union sud africaine avec le Basutoland et le Swaziland qui sont des protectorats.
+- ça fait un moment que les San et les Khoïkhoï sont installés à l'ouest, ainsi que d'autres sociétés bantouphones à l'est telles que les Sotho-Tswana, les Xhosa, les Zoulous et les Swazis.
+- En 1652, la Compagnie néerlandaise des Indes orientales fonde une station au Cap. 
+- La langue afrikaans s'impose comme un dérivé du néerlandais du Cap.
+- Les neuf guerres de frontière du Cap (guerres cafres), opposent les colons et les Xhosa entre 1779 et 1879.
+- La Grande-Bretagne occupe le Cap en 1795, le restitue en 1803, puis le reprend en 1806. L'abolition de l'esclavage dans l'Empire britannique en 1833 contribue, avec d'autres tensions, au Grand Trek de nombreux Boers à partir de 1835.
+- Les Voortrekkers fondent plusieurs républiques boers, dont l'État libre d'Orange et la République sud-africaine du Transvaal. Les Britanniques établissent de leur côté la colonie du Natal.
+- Au début du XIXe siècle, le *Mfecane* accompagne la formation ou l'expansion de plusieurs États africains, notamment les royaumes zoulou, sotho, swazi et ndebele. Le Lesotho devient un protectorat britannique en 1868.
+- La découverte de diamants près de Kimberley à partir de 1867, puis d'or dans le Witwatersrand en 1886, accélère l'industrialisation, les migrations et la domination coloniale.
+- La seconde guerre des Boers se déroule de 1899 à 1902 et s'achève par la victoire britannique. En 1910, les colonies du Cap et du Natal et les anciennes républiques boers forment l'Union sud-africaine ; le Basutoland et le Swaziland n'en font pas partie.

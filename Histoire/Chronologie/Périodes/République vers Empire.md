@@ -2,21 +2,23 @@
 type: periode
 civilisation: Romains
 groupe: Europe
-nom: République vers Empire
+nom: De la République à l'Empire
 debut: -202
 fin: -27
 couleur: "#562063"
-resume: Rome monte en puissance
+resume: Conquêtes méditerranéennes, guerres civiles et avènement d'Auguste
 ordre: "100"
 detaille: non
 ---
-- En -168 Rome prend le contrôle de la Macédoine.
-- La 3e guerre punique termine en -146 et Carthage est détruite donc récupérée par les romains.
-- En parallèle on a l'annexation de l'Espagne, du reste de la Grèce, guerre contre la Numidie, récupération du Cyrénaïque, conquête de la Gaule transalpine. 
-- Après des insurrections, la citoyenneté romaine est donnée à tous les peuples italiques.
-- Guerre civile en Marius et Sylla pour prendre le contrôle de l'armée et Sylla finit par gagner. Il part donc batailler contre le royaume du Pont qui prend du terrain en Turquie. En rentrant il se fait nommer dictateur mais meurt en -78.
-- Pompée à la tête de l'armée repousse les Arméniens et le Pont puis vassalise Jérusalem et le royaume de Judée. Pendant ce temps César conquit la Gaule.
-- En -49 César franchit le Rubicon ce qui déclenche la guerre civile (lui contre Pompée), Pompée est tué, César nommé dictateur à vie puis également assassiné.
-- Un triumvirat est mit en place avec Octave, Marc Antoine et Lépide. 
-- Mais finalement à la bataille de Philippes en -42 la coalition est rompue, Octave a l'occident, Lépide l'Afrique et Marc Antoine l'orient (et Rome reste au Sénat). Octave démet Lépide et bat Marc Antoine (pourtant allié avec Cléopâtre) à la bataille d'Actium en -31.
-- Octave est proclamé Empereur en -27
+- Après sa victoire sur Carthage en 202 av. J.-C., Rome devient la principale puissance de Méditerranée occidentale et intervient de plus en plus dans le monde hellénistique.
+- La Macédoine est vaincue en 168 av. J.-C. puis transformée en province. En 146, Rome détruit Carthage et Corinthe et impose sa domination sur la Grèce.
+- Les conquêtes apportent terres, tributs et esclaves, mais accentuent les inégalités. Les réformes agraires des frères Gracques se heurtent violemment à l'aristocratie sénatoriale.
+- Rome combat Jugurtha en Numidie puis les Cimbres et les Teutons. Marius réforme le recrutement militaire, renforçant à terme la fidélité personnelle des soldats à leurs généraux.
+- La guerre sociale, de 91 à 88 av. J.-C., oppose Rome à ses alliés italiens. La citoyenneté est finalement accordée à la plupart des hommes libres de l'Italie péninsulaire.
+- La rivalité entre Marius et Sylla déclenche des guerres civiles. Sylla marche sur Rome, devient dictateur et fait proscrire ses ennemis avant d'abdiquer en 79 av. J.-C.
+- Pompée conquiert le royaume du Pont, annexe la Syrie et intervient en Judée. Avec Crassus et César, il forme en 60 av. J.-C. une alliance politique appelée premier triumvirat.
+- César conquiert la Gaule entre 58 et 50 av. J.-C. En franchissant le Rubicon en 49, il ouvre une guerre civile contre Pompée et le Sénat.
+- Après sa victoire, César devient dictateur à vie mais est assassiné le 15 mars 44 av. J.-C. par un groupe de sénateurs.
+- Octave, Marc Antoine et Lépide forment le second triumvirat en 43 av. J.-C. Ils battent les assassins de César à Philippes en 42 puis se partagent le monde romain.
+- Octave écarte Lépide et affronte Marc Antoine, allié à Cléopâtre VII. Sa victoire navale d'Actium en 31 av. J.-C. lui donne le contrôle de l'empire.
+- En 27 av. J.-C., le Sénat lui accorde le titre d'Auguste. Il n'est pas proclamé « empereur » au sens moderne, mais établit le principat, régime monarchique conservant les formes républicaines.

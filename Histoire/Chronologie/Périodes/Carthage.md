@@ -3,19 +3,17 @@ type: periode
 civilisation: Carthage
 groupe: Afrique du Nord
 nom: Carthage
-debut: -650
+debut: -814
 fin: -146
 couleur: "#A69E00"
-resume:
+resume: Puissance punique de Méditerranée occidentale détruite par Rome
 ordre: "110"
 detaille: non
 ---
-- Fondé en -814 par les Phéniciens
-- En -572 lorsque Tyr est pris par les Babyloniens, Carthage est déjà au sein de la civilisation punique. 
-- Alliance avec Rome contre les Grecs avec notamment la prise de la Corse.
-- Guerres pendant plus d'un siècle pour la Sicile mais Syracuse ne sera jamais prise aux Grecs.
-- Finalement Rome initie les guerres puniques par peur de Carthage et la première dure 20ans et mène à la victoire de la Sicile par les Romains. Elle devra ensuite lui céder la Corse et la Sardaigne.
-- Carthage prend du territoire en Espagne notamment avec son général Hannibal Barca et ses éléphants. Une deuxième guerre punique est déclenchée lorsqu'Hannibal prend Sagonte en Espagne qui était une alliée de Rome. 
-- Hannibal franchit les Alpes et gagne des batailles en Italie sans pouvoir attaquer Rome pour autant. Un Mythe dit qu'il s'arrête à Capoue séduit par ses délices.
-- Rome reprend petit à petit le contrôle jusqu'en -202 à la bataille de Zama où l'empire Carthaginois est tout petit. 
-- La troisième guerre punique se termine en -146 et Rome s'empare de Carthage.
+- Selon la tradition, Carthage est fondée par des Phéniciens de Tyr en 814 av. J.-C. La cité devient progressivement indépendante et dirige un vaste réseau de comptoirs en Méditerranée occidentale.
+- Sa puissance repose sur le commerce maritime, une flotte importante, des territoires agricoles en Afrique du Nord et des possessions en Sicile, en Sardaigne et dans la péninsule Ibérique.
+- Carthage affronte durant plusieurs siècles les cités grecques de Sicile, particulièrement Syracuse, sans parvenir à dominer toute l'île.
+- La première guerre punique, de 264 à 241 av. J.-C., naît d'un conflit en Sicile. Rome l'emporte et annexe ensuite la Sicile, puis profite de la faiblesse carthaginoise pour prendre la Sardaigne et la Corse.
+- Les Barcides étendent alors l'influence carthaginoise en Hispanie. La prise de Sagonte par Hannibal déclenche la deuxième guerre punique en 218 av. J.-C.
+- Hannibal traverse les Alpes et remporte de grandes victoires, notamment à Cannes, mais ne prend pas Rome. Scipion l'Africain porte la guerre en Afrique et gagne la bataille de Zama en 202 av. J.-C.
+- Carthage retrouve une certaine prospérité économique, ce qui alarme Rome. À l'issue de la troisième guerre punique, la ville est prise et détruite en 146 av. J.-C. ; son territoire devient la province romaine d'Afrique.

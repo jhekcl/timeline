@@ -2,20 +2,22 @@
 type: periode
 civilisation: Inde
 groupe: Asie
-nom: Inde Britannique
+nom: Inde britannique
 debut: 1757
-fin: 1890
+fin: 1947
 couleur: "#FF770D"
-resume:
+resume: De la domination de la Compagnie des Indes à l'indépendance et à la partition
 ordre: "20"
 detaille: non
 ---
-- Pendant la guerre de 7 ans, il y a une vraie guerre entre France et Angleterre pour avoir l'avantage en Inde.
-- En 1757, le sultanat du Bengale s'allie avec les français mais les anglais retournent la situation en promettant le trône au sultan. La bataille de Plassey est une victoire britannique (alors qu'il y avait 17x plus de français). Les anglais ont donc de plus en plus d'influence dans l'administration Indienne notamment avec le commandant Robert Clive. 
-- Une deuxième victoire contre les français plus au sud puis une victoire contre les moghols au nord marque la domination britannique sur tout l'ouest via la compagnie des Indes orientales.
-- Les guerres contre le Mysore au sud et contre les Marathes à l'ouest vont finir par être gagnées par les britannique tandis qu'Hyderabad au centre sera pris sans mal. 
-- La révolte batave permet aux anglais de récupérer tous les comptoirs hollandais au sud de l'inde et au Sri Lanka qu'ils peuvent annexer en 1819.
-- Jusqu'en 1856, la guerre contre la Birmanie permet de récupérer des territoires mais aussi au nord de l'inde et chez les sikhs.
-- Ce sont les cipayes (soldats  indiens) qui sont utilisés pour se battre.
-- En 1857, c'est la révolte des cipayes qui provoque beaucoup de morts mais que les anglais finissent par mater. ça marque quand même la fin de la colonie des Indes et ça devient juste une possession de la couronne britannique (le Raj Britannique).
-- en 1885, la Birmanie est annexée.
+- La Compagnie anglaise des Indes orientales remporte la bataille de Plassey en 1757 grâce à la trahison d'une partie de l'armée du nawab du Bengale. Cette victoire lui donne une influence décisive sur la province.
+- Après la bataille de Buxar en 1764, la Compagnie obtient en 1765 le droit de percevoir les revenus du Bengale, du Bihar et de l'Orissa. Elle devient une puissance territoriale autant que commerciale.
+- La rivalité franco-britannique se conclut en faveur des Britanniques durant la guerre de Sept Ans, notamment après la victoire de Wandiwash en 1760. Les Français conservent quelques comptoirs sans puissance militaire autonome.
+- La Compagnie vainc progressivement le Mysore, la confédération marathe et l'Empire sikh. D'autres États, comme Hyderabad, restent princiers mais sous tutelle britannique.
+- L'expansion repose largement sur des soldats indiens, les cipayes, commandés par des officiers britanniques, ainsi que sur des alliances, des annexions et une fiscalité lourde.
+- En 1857, une mutinerie de cipayes se transforme en vaste révolte contre la domination britannique dans le nord et le centre de l'Inde. La répression est extrêmement violente des deux côtés.
+- En 1858, le Parlement abolit le gouvernement de la Compagnie et place l'Inde sous l'autorité directe de la Couronne : c'est le Raj britannique. Les princes conservent leurs États sous souveraineté impériale.
+- Les chemins de fer, le télégraphe et les administrations unifient le territoire au service du pouvoir colonial et du commerce. Les politiques économiques britanniques contribuent aussi à la désindustrialisation de certains secteurs et aggravent plusieurs famines.
+- Le Congrès national indien est fondé en 1885 et la Ligue musulmane en 1906. Le mouvement nationaliste se renforce après la Première Guerre mondiale.
+- Mohandas Gandhi popularise la désobéissance civile non violente, notamment lors de la marche du sel de 1930. D'autres courants indépendantistes emploient des stratégies différentes, parfois révolutionnaires ou armées.
+- Après la Seconde Guerre mondiale, le Royaume-Uni accepte de se retirer. En août 1947, l'Inde britannique est partagée entre l'Union indienne et le Pakistan, provoquant des déplacements de population et des violences qui font des centaines de milliers de morts.

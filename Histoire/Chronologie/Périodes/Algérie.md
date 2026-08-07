@@ -1,22 +1,21 @@
 ---
 type: periode
-civilisation: Algerie
+civilisation: Algérie
 groupe: Afrique du Nord
-nom: Algérie
-debut: 1500
+nom: Régence d'Alger et conquête française
+debut: 1516
 fin: 1848
 couleur: "#CF2B0C"
-resume:
+resume: De la prise d'Alger par les Barberousse à la création des départements français d'Algérie
 ordre: "190"
 detaille: non
 ---
-- Les espagnols se sont emparés de plein de villes côtières au Maghreb mais c'est les deux frères corsaires Ottomans Barberousse qui vont prendre Alger en 1516 pour y fonder un Sultanat.
-- Sous la menace des Zianides, Hafsides et Espagnols, les ottomans viennent en aide au Sultanat et ça devient une régence en 1519.
-- En 1659, les Janissaires destituent le pacha ottoman en place et fonde un régime militaire (les aghas). C'est l'indépendance face aux ottomans.
-- Ensuite c'est des deys à partir de 1671.
-- En 1791, Paix avec l'Espagne ce qui permet à Alger d'enfin récupérer Oran.
-- La France de Charles X est mécontente et ce dernier souhaite retrouver un empire colonial pour se faire apprécier.
-- Blocus d'Alger sur un prétexte bidon en 1827 et le 5 juillet 1830 à lieu la prise d'Alger. Les Beys refusent de céder mais Oran est prise en 1831.
-- L'émir Abdelkader fonde un état à l'ouest que la France reconnait pour pouvoir attaquer tranquillement la zone de Constantine à l'est qui est prise en 1837.
-- C'est sous le Général Bugeaud que méthodiquement toute l'Algérie va être conquise jusqu'à faire tomber l'émirat d'Abdelkader en 1847.
-- En 1848, l'Algérie Française est découpée en 3 départements : Oran, Alger et Constantine.
+- Au début du XVIe siècle, l'Espagne occupe plusieurs ports du Maghreb. En 1516, le corsaire Arudj Barberousse prend Alger ; son frère Khayr ad-Din place ensuite la ville sous la protection du sultan ottoman en 1518.
+- La régence d'Alger est une province de l'Empire ottoman, mais elle acquiert une large autonomie. Le pouvoir passe des pachas aux aghas en 1659, puis aux deys à partir de 1671.
+- La course maritime, le commerce et les tributs jouent un rôle important dans l'économie de la régence. Son autorité sur l'intérieur du pays s'exerce par l'intermédiaire des beys et varie selon les régions.
+- Oran, longtemps occupée par l'Espagne, est définitivement reprise par la régence en 1792.
+- Un contentieux financier entre la France et la régence débouche sur l'incident diplomatique dit du « coup d'éventail » en 1827. Charles X impose alors un blocus à Alger, puis lance une expédition militaire.
+- Alger capitule le 5 juillet 1830. La conquête française se poursuit cependant durant plusieurs décennies et rencontre de nombreuses résistances.
+- Dans l'Ouest, l'émir Abd el-Kader fonde un État et combat la France à partir de 1832. Le traité de la Tafna de 1837 reconnaît provisoirement son autorité sur une large partie de l'intérieur, tandis que Constantine est prise la même année.
+- Le gouverneur général Bugeaud mène une guerre de conquête particulièrement brutale. Abd el-Kader se rend en 1847, mais la soumission de l'ensemble du territoire, notamment de la Kabylie et du Sahara, est bien postérieure.
+- En 1848, la France transforme les territoires du Nord en trois départements — Alger, Oran et Constantine — au sein d'une colonie de peuplement qui repose sur d'importantes spoliations foncières.

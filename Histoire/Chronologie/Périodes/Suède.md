@@ -2,19 +2,21 @@
 type: periode
 civilisation: Suède
 groupe: Europe
-nom: Suède
+nom: Empire suédois
 debut: 1523
 fin: 1721
 couleur: "#27486E"
-resume:
+resume: De l'indépendance sous Gustave Vasa à la fin de la grande guerre du Nord
 ordre: "400"
-de: non
+detaille: non
 ---
-- Depuis 1327, l'Union de Kalmar unit la Suède, le Danemark et la Norvège. (Finlande appartient à Suède et Islande à Norvège).
-- Fin de l'Union en 1523 après des insurrections suédoises et la Suède devient indépendant avec Gustave Vasa à sa tête. Cependant la Norvège et le Danemark restent ensemble.
-- En 1558, la guerre de Livonie permet à la Suède de récupérer le nord de l'Estonie.
-- En 1587, Sigismond III fils du roi de Suède est élu roi de la PL avant de devenir roi de Suède à son tour en 1592. Comme ce dernier se concentre plutot sur la PL, Charles IX son oncle récupère le trone de Suède.
-- Pendant la Guerre de 30 ans, Gustave II Adolphe récupère toute la Livonie aux Polonais. Puis avec le traité de Westphalie, sa fille Christine récupère des terres dans le SGE. 
-- De 1655 à 1660 pendant la première guerre du Nord, la Suède ravage entièrement la PL et tout les pays du nord s'alllient contre elle.
-- A l'international, elle dispose d'un comptoir en Inde et un autre au Ghana.
-- En 1700, sous Charles XII, la Suède doit faire face à une nouvelle coalition contre elle pendant la Grande guerre du Nord. La Suède s'en sort pas trop mal mais se fait casser la gueule en 1709 par les Russes à la bataille de Poltava. En 1721, elle doit céder tous ses territoires de Livonie.
+- L'union de Kalmar, créée en 1397, réunit sous un même monarque le Danemark, la Norvège et la Suède, qui comprend alors la Finlande. Les royaumes conservent leurs institutions.
+- Après plusieurs révoltes contre la domination danoise, Gustave Vasa est élu roi de Suède en 1523. Cette date marque la sortie définitive de l'union.
+- Gustave renforce la monarchie, rend la couronne héréditaire et impose progressivement la Réforme luthérienne. Les biens de l'Église sont largement confisqués.
+- La guerre de Livonie, ouverte en 1558, permet à la Suède d'acquérir l'Estonie du Nord. Elle entre en rivalité durable avec le Danemark, la Pologne-Lituanie et la Russie pour le contrôle de la Baltique.
+- Le catholique Sigismond III Vasa, déjà roi de Pologne-Lituanie, hérite du trône suédois en 1592. Son oncle Charles le renverse ; Sigismond est déposé en 1599.
+- Gustave II Adolphe intervient dans la guerre de Trente Ans en 1630 et remporte plusieurs victoires avant de mourir à Lützen en 1632. Les traités de Westphalie donnent à la Suède des territoires dans le Saint-Empire.
+- Au milieu du XVIIe siècle, la Suède contrôle la Finlande, l'Estonie, la Livonie et plusieurs possessions allemandes. Elle devient la principale puissance militaire de la Baltique.
+- L'invasion de la Pologne-Lituanie en 1655 ouvre le « Déluge », guerre extrêmement destructrice. Une coalition finit par contenir l'expansion suédoise.
+- En 1700, la Russie, le Danemark-Norvège et la Saxe-Pologne attaquent Charles XII. Après de premiers succès, l'armée suédoise est écrasée par Pierre le Grand à Poltava en 1709.
+- Les traités de 1721 mettent fin à la grande guerre du Nord. La Suède cède notamment l'Estonie, la Livonie et l'Ingrie à la Russie, qui devient la première puissance de la Baltique.

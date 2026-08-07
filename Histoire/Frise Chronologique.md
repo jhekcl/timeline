@@ -19,14 +19,14 @@ const FRISES = [
 
 const ORDRE_GROUPES = [
     "Europe",
-    "Moyen Orient",
+    "Moyen-Orient",
     "Asie",
     "Océanie",
     "Afrique du Nord",
-    "Afrique Subsaharienne",
-    "Amerique du Nord",
-    "Amerique centrale",
-    "Amerique du sud"
+    "Afrique subsaharienne",
+    "Amérique du Nord",
+    "Amérique centrale",
+    "Amérique du Sud"
 ];
 
 const pages = FRISES.flatMap(frise =>

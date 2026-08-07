@@ -2,17 +2,22 @@
 type: periode
 civilisation: Romains
 groupe: Europe
-nom: Liberté Italie
+nom: Italie des communes et des principautés
 debut: 1122
-fin: 1440
+fin: 1494
 couleur: "#562063"
-resume:
+resume: Fragmentation politique, essor des cités et débuts de la Renaissance
 ordre: "370"
+detaille: non
 ---
-- En 1122, Roger II apaise le pays et le royaume de Sicile nait. (C'est encore des Normands).
-- Frédéric Barberousse du Saint Empire Germanique perd le contrôle de l'Italie quand en 1167 la ligue Lombarde est créée avec le soutien du Pape et avec la victoire de Legnano en 1176. 
-- les Etats Pontificaux reviennent et l'Italie du nord est divisée avec notamment le royaume de Pise ou de Gênes.
-- Henri VI puis Frédéric II du Saint Empire Germanique reprennent le contrôle de la Sicile en 1194. Cependant le reste de l'Italie est plus dure car il y a une guerre ouverte entre le Saint Empire Germanique et le pape. L'empire est alors divisé en 2 camps : les Guelfes (pour le pape) et les Gibelins (pour l'empereur). A la mort de Frédéric II en 1250 tout se fragmente et fin de l'autorité de l'empire.
-- En 1250 on a plieurs petits états : Gênes qui casse la gueule à Pise et qui se bat avec Venise pour des comptoirs dans la mer Egée et en mer Noire jusqu'au traité de Turin en 1381 , Venise et son voyage de Marco Polo en 1271, le duché de Milan et celui de Florence.
-- En 1418 c'est la fin du grand schisme d'occident et c'est le retour du pape à Rome.
-- En 1435, l'Aragon qui avait déjà récupéré la Sicile va également récupérer le royaume de Naples lorsque les angevins n'ont plus d'héritiers. Le royaume des deux Siciles est fondé.
+- Le concordat de Worms de 1122 apaise la querelle des Investitures sans mettre fin à la rivalité entre papes et empereurs pour le contrôle de l'Italie.
+- Roger II unifie les possessions normandes du Sud et est couronné roi de Sicile en 1130. Son royaume rassemble la Sicile et l'Italie méridionale.
+- Dans le Nord, les communes urbaines gagnent en autonomie. La Ligue lombarde, soutenue par le pape, bat Frédéric Barberousse à Legnano en 1176 et obtient la reconnaissance de ses libertés en 1183.
+- Les Hohenstaufen acquièrent le royaume de Sicile en 1194. Le conflit entre Frédéric II et la papauté nourrit l'opposition entre guelfes, partisans du pape, et gibelins, partisans de l'empereur.
+- Après la mort de Frédéric II, l'autorité impériale décline fortement en Italie. Charles d'Anjou conquiert le royaume de Sicile en 1266 avec l'appui du pape.
+- Les Vêpres siciliennes de 1282 chassent les Angevins de l'île, qui passe sous domination aragonaise. Les Angevins conservent le royaume continental de Naples.
+- Venise et Gênes bâtissent de grands empires commerciaux en Méditerranée orientale et en mer Noire. Leur dernière grande guerre s'achève par la paix de Turin en 1381, favorable à Venise.
+- Florence, Milan, Venise, Gênes et les États pontificaux deviennent les principales puissances du centre et du nord de l'Italie. Les communes se transforment souvent en seigneuries ou en républiques oligarchiques.
+- La papauté siège à Avignon de 1309 à 1377. Le Grand Schisme d'Occident, commencé en 1378, prend fin au concile de Constance en 1417.
+- Alphonse V d'Aragon conquiert Naples en 1442. Naples et la Sicile ont alors le même souverain, mais restent juridiquement deux royaumes distincts ; le « royaume des Deux-Siciles » n'est créé qu'en 1816.
+- La prospérité urbaine et le mécénat favorisent la Renaissance. L'invasion de Charles VIII en 1494 ouvre les guerres d'Italie et bouleverse l'équilibre de la péninsule.

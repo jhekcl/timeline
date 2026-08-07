@@ -2,21 +2,22 @@
 type: periode
 civilisation: Angleterre
 groupe: Europe
-nom: Tudor
-debut: 1453
-fin: 1604
+nom: Dynastie Tudor
+debut: 1485
+fin: 1603
 couleur: "#236B00"
-resume:
+resume: De la fin de la guerre des Deux-Roses à l'avènement des Stuart
 ordre: "270"
 detaille: non
 ---
-- A la fin de la guerre de cent ans en 1453, l'Angleterre (séparée de l'Ecosse et de la seigneurie d'Irlande) voit son roi Henri VI devenir fou.
-- La légitimité du roi est discutée car il vient de la branche cadette des Lancastre qui pris le pouvoir par la force en 1399 sur celle des Plantagenets. 
-- Donc en 1455, le duc d'York (une autre branche cadette) essaye de reprendre le pouvoir par la force et c'est le début de la Guerre des 2 roses. 
-- En 1460, Henri VI est capturé et en 1461 c'est Edouard IV (d'York) qui monte sur le trône.
-- Les Lancastriens continuent de se battre avec l'appuie de l'Ecosse et des Français mais Edouard IV s'impose en 1471. 
-- A sa mort en 1483 ça part en couilles et en 1485, Henri VII de la maison Tudor prend le trône. Il se dit légitime car c'est a peu près un descendant des Lancastre et en plus il se marie avec Elizabeth d'York pour calmer les tensions.
-- En 1534, l'Acte de Suprématie voit le jour ce qui marque la fondation de l'Eglise Anglicane.
-- En 1558, c'est Elizabeth Ière qui monte sur le trône et elle remet le protestantisme au gout du jour.
-- En 1577, Francis Drake fait le 2e tour du monde et les pillage dans les Antilles Espagnols sont très importants.
-- A la mort d'Elizabeth qui ne voulait pas se marier, c'est Jacques Stuart le roi d'Ecosse qui récupère le trône ce qui unit l'Ecosse et l'Angleterre en 1603.
+- La guerre des Deux-Roses oppose à partir de 1455 les maisons de Lancastre et d'York, deux branches de la dynastie Plantagenêt, dans un conflit discontinu pour la couronne.
+- Henri Tudor bat Richard III à Bosworth en 1485 et devient Henri VII. Son mariage avec Élisabeth d'York contribue à réconcilier symboliquement les deux maisons.
+- Henri VII restaure les finances et l'autorité monarchiques après les guerres civiles. Il évite les grandes campagnes extérieures et encadre étroitement la noblesse.
+- Henri VIII rompt avec la papauté après le refus d'annuler son mariage avec Catherine d'Aragon. L'Acte de suprématie de 1534 fait du roi le chef de l'Église d'Angleterre.
+- La dissolution des monastères transfère d'immenses biens à la Couronne puis à de nouveaux propriétaires. La doctrine religieuse oscille encore entre éléments catholiques et réformes protestantes.
+- Sous Édouard VI, le protestantisme progresse. Marie Ire rétablit ensuite le catholicisme et fait exécuter plusieurs centaines de protestants pour hérésie.
+- Élisabeth Ire monte sur le trône en 1558 et établit un compromis protestant durable. Catholiques et protestants radicaux restent néanmoins persécutés.
+- Les marins anglais développent le commerce, la course et les premières tentatives de colonisation. Francis Drake accomplit le deuxième tour du monde entre 1577 et 1580.
+- L'exécution de Marie Stuart, reine d'Écosse, en 1587 et le soutien anglais aux révoltés néerlandais contribuent à la guerre avec l'Espagne. L'Armada espagnole échoue en 1588.
+- La conquête de l'Irlande s'intensifie sous Élisabeth et s'accompagne de répression, de confiscations et de plantations. Les difficultés économiques et la pauvreté marquent aussi la fin du règne.
+- Élisabeth meurt sans enfant en 1603. Jacques VI d'Écosse devient Jacques Ier d'Angleterre, réunissant les deux couronnes sous la dynastie Stuart, mais pas encore les deux États.

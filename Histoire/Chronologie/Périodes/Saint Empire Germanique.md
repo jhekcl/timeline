@@ -2,18 +2,22 @@
 type: periode
 civilisation: Allemagne
 groupe: Europe
-nom: Saint empire Germanique
+nom: Saint-Empire romain germanique
 debut: 962
-fin: 2000
+fin: 1806
 couleur: "#663B00"
-resume:
+resume: Monarchie élective d'Europe centrale, d'Otton Ier à sa dissolution par François II
 ordre: "265"
 detaille: non
 ---
-- Otton I puis II puis III, c'est difficile en Italie mais ça récupère le royaume des 2 bourgognes, le duché de bohème et ça tabasse du slave à l'est.
-- Vers 1050 le pape Léon IX lance la réforme grégorienne : les papes sont élus par des cardinaux, les évêques doivent respecter le célibat et les évêques sont nommés par les papes.
-- La querelle des investitures (entre l'empereur et le pape) est lancée en 1075 et c'est le pape qui gagne en 1122 avec le concordat de Worms.
-- En 1155, Frédéric Barberousse monte sur le trône. Il récupère du terrains sur les slaves et affirme son autorité sur le royaume des deux Bourgognes. Il perd cependant le contrôle de l'Italie.
-- Henri VI puis Frédéric II reprennent le contrôle de la Sicile en 1194. Cependant le reste de l'Italie est plus dure car il y a une guerre ouverte entre le Saint Empire Germanique et le pape. L'empire est alors divisé en 2 camps : les Guelfes (pour le pape) et les Gibelins (pour l'empereur). A la mort de Frédéric II en 1250 tout se fragmente et fin de l'autorité de l'empire.
-- En 1517, Martin Luther est à l'origine du protestantisme. Il se fait bannir et excommunier en 1521 ce qui lui donne de la visibilité.
-- En 1545, les catholiques lancent le concile de trente qui débouche sur la Contre réforme.
+- Otton Ier, roi de Francie orientale, bat les Magyars au Lechfeld en 955 et est couronné empereur à Rome en 962. Cette date marque traditionnellement la fondation du Saint-Empire.
+- L'empire rassemble le royaume de Germanie, l'Italie du Nord et, à partir de 1032, le royaume de Bourgogne. Il ne constitue pas un État centralisé et ses frontières évoluent fortement.
+- La querelle des Investitures oppose papes et empereurs sur la nomination des évêques. Le concordat de Worms de 1122 établit un compromis entre leurs pouvoirs spirituel et temporel.
+- Frédéric Barberousse tente de rétablir l'autorité impériale en Italie, mais la Ligue lombarde le bat à Legnano en 1176. Son petit-fils Frédéric II gouverne aussi le royaume de Sicile et affronte longuement la papauté.
+- Après la mort de Frédéric II en 1250, le pouvoir impérial s'affaiblit. La Bulle d'or de 1356 fixe les règles de l'élection de l'empereur par sept princes-électeurs.
+- À partir de 1438, les Habsbourg obtiennent presque continuellement la couronne impériale. L'empire reste toutefois composé de centaines de principautés, villes libres et territoires ecclésiastiques.
+- La Réforme commence avec les thèses de Martin Luther en 1517. La paix d'Augsbourg de 1555 reconnaît aux princes le choix entre catholicisme et luthéranisme, mais pas encore les autres confessions.
+- Les tensions religieuses et politiques débouchent sur la guerre de Trente Ans en 1618. Les traités de Westphalie de 1648 reconnaissent de larges droits aux États impériaux et incluent le calvinisme dans le compromis religieux.
+- L'Autriche et la Prusse deviennent les deux principales puissances germaniques au XVIIIe siècle. L'empire conserve néanmoins des institutions communes, dont la Diète et les tribunaux impériaux.
+- Sous la pression de Napoléon, le recès de 1803 supprime de nombreux petits États ecclésiastiques et villes libres. Plusieurs princes quittent ensuite l'empire pour la Confédération du Rhin.
+- Le 6 août 1806, François II renonce à la couronne impériale et dissout le Saint-Empire. Il conserve le titre d'empereur d'Autriche, adopté en 1804.

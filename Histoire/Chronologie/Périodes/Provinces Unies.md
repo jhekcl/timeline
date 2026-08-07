@@ -1,28 +1,24 @@
 ---
 type: periode
-civilisation: Pays Bas
+civilisation: Pays-Bas
 groupe: Europe
-nom: Provinces Unies
-debut: 1579
+nom: Provinces-Unies
+debut: 1568
 fin: 1795
 couleur: "#D96900"
-resume:
+resume: Révolte contre l'Espagne, âge d'or néerlandais et République batave
 ordre: "410"
 detaille: non
 ---
-- En 1477, la région fait partie des Etats Bourguignons de Charles le téméraire.
-- C'est les Habsbourgs qui récupèrent la quasi totalité des terres à sa mort avec entre autres Charles Quint qui devient duc de Bourgogne en 1506 et la région de vient les Pays Bas espagnols. Il s'agit en gros du Bénélux actuel.
-- En 1566 a lieu la révolte des gueux (protestants) qui se fait mater.
-- Le duc d'Albe au pouvoir fait tuer 1000 rebelles ce qui ravive l'insurrection.
-- En 1568, le prince Guillaume Ier d'Orange Nassau protestant va lever une armée en Saxe pour déclarer la guerre aux espagnols. C'est le début de la guerre de 80 ans (guerre d'indépendance des Pays Bas).
-- En 1572, Guillaume est nommé gouverneur de Hollande et de Zélande. 
-- On se retrouve avec l'Union d'Arras du côté Espagnol contre l'union d'Utrecht du côté d'Orange.
-- En 1581 la république est proclamée et c'est l'indépendance des Provinces Unies.
-- Après la prise d'Anvers par les espagnols, la situation de stabilité notamment grâce aux soutiens anglais et français envers les Provinces unies.
-- Ce n'est qu'en 1648 que l'indépendance des Provinces Unies sera reconnue par l'Espagne.
-- En 1619, Batavia (future Jakarta) est fondée par la VOC (compagnie des Indes Orientales)
-- En 1625 c'est la Nouvelle Amsterdam (future NY) qui est fondée. Puis ils s'implantent dans les Caraïbes et dans les Guyanes.
-- Ensuite c'est Le Cap, Malacca, le Sri lanka, toutes les Indes orientales (Indonésie).
-- Les guerres avec la flotte anglaise fait perdre les territoires en Amérique du Nord mais permet de récupérer le Suriname.
-- En 1672 la France mène la Guerre de Hollande qui affaiblit beaucoup le pays.
-- La révollution Batave éclate en 1780 et même si elle est remise en ordre par l'aide de la Prusse, en 1795 lorsque la France vient soutenir les républicains, Guillaume V d'Orange est contraint de fuir et la république Batave est proclamée.
+- Les Pays-Bas bourguignons passent aux Habsbourg après la mort de Marie de Bourgogne en 1482. Charles Quint puis Philippe II d'Espagne gouvernent les dix-sept provinces.
+- Les tensions religieuses, fiscales et politiques provoquent la révolte des Pays-Bas. La répression conduite par le duc d'Albe à partir de 1567 radicalise l'opposition.
+- Guillaume d'Orange lance une offensive en 1568, date traditionnelle du début de la guerre de Quatre-Vingts Ans.
+- En 1579, les provinces méridionales majoritairement catholiques forment l'union d'Arras, tandis que les provinces rebelles du Nord concluent l'union d'Utrecht.
+- L'acte de La Haye de 1581 déclare Philippe II déchu de ses droits. Les provinces du Nord deviennent une république fédérale, où le stathouder partage le pouvoir avec les États provinciaux et les élites urbaines.
+- La chute d'Anvers en 1585 entraîne le départ de nombreux marchands et artisans vers Amsterdam. L'Espagne reconnaît finalement l'indépendance des Provinces-Unies aux traités de Westphalie en 1648.
+- Le XVIIe siècle est un « âge d'or » commercial, scientifique et artistique, mais la prospérité est inégalement répartie et repose aussi sur la guerre, la colonisation et l'esclavage.
+- La VOC, fondée en 1602, établit Batavia en 1619 et bâtit un empire commercial violent en Asie. La Compagnie des Indes occidentales intervient dans l'Atlantique et participe à la traite négrière.
+- La Nouvelle-Amsterdam est fondée en 1624 puis prise par les Anglais en 1664 et renommée New York. Le traité de Bréda de 1667 confirme aux Néerlandais le Suriname.
+- Les guerres navales contre l'Angleterre et l'invasion française de 1672, l'« année du désastre », fragilisent la République sans mettre fin à sa puissance commerciale.
+- Dans les années 1780, le mouvement des Patriotes réclame des réformes. Une intervention prussienne restaure le stathouder en 1787.
+- En 1795, l'armée française et les révolutionnaires néerlandais renversent Guillaume V d'Orange et proclament la République batave.

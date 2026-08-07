@@ -1,21 +1,19 @@
 ---
 type: periode
-civilisation: Asie du sud est
+civilisation: Asie du Sud-Est
 groupe: Asie
-nom: Asie du sud Est ancien
+nom: Asie du Sud-Est ancienne
 debut: 800
 fin: 1400
 couleur: "#000291"
-resume:
+resume: Grands royaumes maritimes et continentaux de l'Asie du Sud-Est médiévale
 ordre: "230"
 detaille: non
 ---
-- Au IIe siècle, l'état de Champ au Vietnam est déjà important.
-- Vers 800 en Indonésie, c'est l'état de Srivijaya qui rayonne de Java à la Malaisie
-- Vers 800 également l'empire Khmer est fondé avec Angkor comme capitale.
-- En 938 le Dai Viet devient indépendant de l'empire chinois.
-- En Birmane en 1100 on retrouve l'important royaume de Pagan.
-- En 1238 dans l'empire Khmer c'est les Thaïs qui proclament leur indépendance en fondant le royaume de Sukhothai.
-- Pagan tombe après un raide Sino Mongol en 1277.
-- En 1350 Sukhothai voit l'arrivée du Lan Xang au nord (futur Laos) et le royaume d'Ayutthaya qui finit par renverser le Sukhothai.
-- En 1377 le Majapahit de Java remplace le vieux empire Srivijaya et couvre tout l'Indonésie et la Malaisie actuelle.
+- Le Champa, dans l'actuel centre du Viêt Nam, forme dès les premiers siècles de notre ère un ensemble de principautés indianisées tournées vers le commerce maritime.
+- L'empire maritime de Srivijaya, centré sur Sumatra, contrôle à partir du VIIe siècle une partie des routes commerciales entre l'Inde, la Chine et l'archipel indonésien.
+- En 802, Jayavarman II fonde traditionnellement l'Empire khmer. Angkor devient le centre d'un État puissant, célèbre pour ses ouvrages hydrauliques et pour le temple d'Angkor Vat, construit au XIIe siècle.
+- Après la fin de la domination chinoise en 938-939, le Đại Việt devient un État indépendant dans le nord de l'actuel Viêt Nam.
+- Le royaume de Pagan unifie une grande partie de la Birmanie à partir du XIe siècle. Il s'affaiblit après les invasions mongoles de la fin du XIIIe siècle.
+- Le royaume thaï de Sukhothaï se forme au XIIIe siècle, tandis qu'Ayutthaya est fondée en 1351 et finit par absorber Sukhothaï. Le Lan Xang, ancêtre du Laos, est fondé en 1353.
+- À Java, Majapahit est fondé en 1293. Il devient au XIVe siècle une grande puissance commerciale, dont l'influence s'étend sur une partie importante de l'archipel sans constituer un contrôle uniforme de toute l'Indonésie.

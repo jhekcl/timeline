@@ -1,26 +1,23 @@
 ---
 type: periode
-civilisation: Allemagne 2
+civilisation: Prusse
 groupe: Europe
-nom: Prusse
+nom: Prusse et unification allemande
 debut: 1525
-fin: 1795
+fin: 1871
 couleur: "#692217"
-resume:
+resume: Du duché de Prusse à la proclamation de l'Empire allemand
 ordre: "267"
 detaille: non
 ---
-- Les teutoniques alors centré autour de Kaliningrad (anciennement Konigsberg) se font harceler par la Polonge Lituanie.
-- En 1525, le grand maitre Teutonique Albert de Prusse transforme son territoire en duché et se convertie au protestantisme. Il doit cependant accepter la suzeraineté polonaise.
-- En 1618, le duc de prusse meurt sans descendance et le duché se fait récupérer par celui de Brandebourg alors centré sur Berlin.
-- Après la guerre de 30ans, le traité de Westphalie permet au duché de prendre du terrain en Porémanie.
-- Une alliance avec la Pologne pour faire face aux suédois permet de se libérer de la suzeraineté Polonaise.
-- Frédéric II après avoir pris la Silésie aux Autrichiens va tenter de prendre la Saxe ce qui va déclencher la guerre de sept ans en 1756.
-- En 1772, la Prusse profite du premier partage de la Pologne pour y prendre tu terrain. 
-- En 1793, deuxième partage de la Pologne
-- En 1795 troisième et dernier départage de la Pologne qui n'existe plus.
-- En 1833, une union commerciale est créée (Zollverein) avec la Bavière et d'autres petites états allemands
-- En 1861, Guillaume Ier devient roi de Prusse et Otton Von Bismarck et ministre président en 1862.
-- En 1866, sur fond de rivalité sur une annexion au sud du Danemark,  la guerre éclate avec l'Autriche et la prusse bien plus moderne l'emporte.
-- En 1866 beaucoup de territoires allemands sont annexés.
-- Après une victoire contre les Françasi en 1870, l'empire allemand est proclamé le 18 janvier 1871 dans la galerie des glaces. Guillaume Ier est à sa tête et l'Aslace Lorraine est annexée. C'est le IIe Reich.
+- En 1525, le grand maître de l'ordre Teutonique, Albert de Brandebourg-Ansbach, se convertit au luthéranisme et transforme la Prusse orientale en duché héréditaire, vassal de la Pologne.
+- En 1618, le duché passe aux électeurs de Brandebourg de la maison de Hohenzollern. Les deux territoires, séparés géographiquement, forment le Brandebourg-Prusse.
+- Les traités de Westphalie de 1648 donnent au Brandebourg une partie de la Poméranie et d'autres territoires. Frédéric-Guillaume, le « Grand Électeur », construit une armée permanente et centralise l'État.
+- Les traités de Wehlau et Bromberg de 1657 libèrent le duché de Prusse de la suzeraineté polonaise. En 1701, l'électeur Frédéric III se couronne « roi en Prusse » sous le nom de Frédéric Ier.
+- Frédéric-Guillaume Ier développe l'administration et l'armée. Son fils Frédéric II conquiert la majeure partie de la Silésie aux Habsbourg pendant les guerres de Silésie.
+- La guerre de Sept Ans, de 1756 à 1763, oppose la Prusse à une coalition comprenant l'Autriche, la Russie et la France. Frédéric conserve la Silésie et fait de la Prusse une grande puissance européenne.
+- La Prusse participe aux trois partages de la Pologne en 1772, 1793 et 1795, qui réunissent une grande partie de ses territoires orientaux.
+- Écrasée par Napoléon en 1806, elle engage les réformes de Stein, Hardenberg et Scharnhorst, qui modernisent l'administration, la société et l'armée.
+- Le congrès de Vienne de 1815 donne à la Prusse d'importants territoires en Rhénanie et en Westphalie. Le Zollverein, union douanière créée en 1834, renforce son influence économique sur les États allemands.
+- Guillaume Ier devient roi en 1861 et nomme Otto von Bismarck ministre-président en 1862. La Prusse bat le Danemark en 1864 puis l'Autriche en 1866 et organise la Confédération de l'Allemagne du Nord.
+- La guerre franco-allemande de 1870-1871 rallie les États allemands du Sud. L'Empire allemand est proclamé à Versailles le 18 janvier 1871, avec Guillaume Ier comme empereur ; l'Alsace et une partie de la Lorraine sont annexées.

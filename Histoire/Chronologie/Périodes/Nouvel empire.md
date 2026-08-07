@@ -1,20 +1,21 @@
 ---
 type: periode
-civilisation: Egypte
+civilisation: Égypte
 groupe: Afrique du Nord
 nom: Nouvel Empire
-debut: -1535
-fin: -1100
+debut: -1550
+fin: -1069
 couleur: "#CF9904"
-resume: De la XVIIIe à la XXe dynastie
+resume: De la XVIIIe à la XXe dynastie, apogée territorial de l'Égypte pharaonique
 ordre: "0"
 detaille: non
 ---
-- Ahmosis I (XVIIIe) vire les Hyksos
-- Thoutmosis I met fin au royaume de Kerma au sud 
-- Hatchepsout est la première vraie femme pharaon (règne durable)
-- Thoutmosis III fait la guerre et agrandit l'empire jusqu'à la Turquie
-- Amenhotep IV abandonne le culte d'Amon au profit de celui d'Aton et devient Akhénaton (avec sa femme Néfertiti) et fonde donc le monothéisme
-- Toutankhaton fait un retour en arrière et devient Toutankhamon, seul pharaon avec un tombeau non pillé
-- Ramsès I fonde la XIXe dynastie
-- Ramsès II est un grand guerrier et un grand bâtisseur
+- Ahmôsis Ier prend Avaris et chasse les Hyksôs vers 1550 av. J.-C. Il réunifie le pays et fonde la XVIIIe dynastie.
+- Les premiers souverains du Nouvel Empire étendent leur contrôle sur la Nubie et le Levant. Thoutmôsis Ier mène des campagnes jusqu'à l'Euphrate.
+- Hatchepsout exerce pleinement le pouvoir pharaonique pendant plus de vingt ans. Son règne est marqué notamment par l'expédition commerciale vers le pays de Pount et par de grandes constructions.
+- Thoutmôsis III remporte la bataille de Megiddo et établit la domination égyptienne sur une grande partie du Levant. L'empire atteint alors son extension maximale.
+- Amenhotep IV prend le nom d'Akhenaton et privilégie le culte d'Aton, sans instaurer nécessairement un monothéisme au sens moderne. Il fonde une nouvelle capitale à Akhetaton avec la reine Néfertiti.
+- Toutankhaton restaure les cultes traditionnels et devient Toutankhamon. Sa célébrité moderne vient de la découverte, en 1922, de sa tombe presque intacte, et non totalement inviolée.
+- Ramsès II affronte les Hittites à Qadesh vers 1274 av. J.-C., puis conclut avec eux un traité de paix. Il fait construire de nombreux monuments, dont les temples d'Abou Simbel.
+- Ramsès III repousse des attaques des « Peuples de la mer », mais l'État s'affaiblit. Crises économiques, conflits internes et perte des territoires asiatiques marquent la fin du Nouvel Empire.
+- À la mort de Ramsès XI vers 1069 av. J.-C., le pouvoir se partage entre Tanis dans le Delta et les grands prêtres d'Amon à Thèbes, ouvrant la Troisième Période intermédiaire.

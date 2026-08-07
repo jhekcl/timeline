@@ -1,15 +1,18 @@
 ---
 type: periode
-civilisation: Ethiopie
-groupe: Afrique Subsaharienne
-nom: Ethiopie Ancienne
-debut: 1140
-fin: 1476
+civilisation: Éthiopie
+groupe: Afrique subsaharienne
+nom: Éthiopie médiévale
+debut: 1137
+fin: 1507
 couleur: "#E58A05"
-resume:
+resume: Des Zagwé à la restauration salomonienne
 ordre: "115"
 detaille: non
 ---
-- Après plusieurs siècles obscures, un royaume chrétien émerge à nouveau en 1140 grâce à la dynastie des Zagwe entre les animistes et les musulmans.
-- En 1270 la dynastie Salomonienne prend le pouvoir pour très longtemps.
-- La principale activité c'est la guerre avec son voisin le Sultanat d'Ifat qui devient le Sultanat d'Abel. c'est surtout une guerre de religion.
+- La dynastie Zagwé gouverne une partie des hauts plateaux éthiopiens à partir du XIIe siècle. Sa capitale est située dans la région de Lasta.
+- Les églises monolithes de Lalibela, taillées dans la roche, sont généralement associées au roi Lalibela et à la dynastie Zagwé.
+- En 1270, Yekouno Amlak renverse les Zagwé et fonde la dynastie dite salomonienne, qui revendique une filiation avec le roi Salomon et la reine de Saba.
+- Le royaume chrétien s'étend vers le Sud et l'Est. Il affronte plusieurs sultanats musulmans, d'abord l'Ifat puis l'Adal, pour le contrôle des routes commerciales et des territoires.
+- Ces conflits ont une dimension religieuse, mais aussi politique et économique. Les régions de la Corne de l'Afrique abritent des communautés chrétiennes, musulmanes et pratiquant des religions locales.
+- Sous Zara Yaqob, au XVe siècle, l'autorité impériale et l'Église sont renforcées. Les premiers contacts diplomatiques réguliers avec le Portugal se nouent à la fin du siècle.

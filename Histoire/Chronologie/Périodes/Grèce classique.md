@@ -2,24 +2,20 @@
 type: periode
 civilisation: Grecs
 groupe: Europe
-nom: Epoque classique
-debut: -550
+nom: Époques classique et hellénistique
+debut: -500
 fin: -280
 couleur: "#0C7A99"
-resume: Monde grec après les mycéniens
+resume: Des guerres médiques au partage de l'empire d'Alexandre
 ordre: "31"
 detaille: non
-cssclasses:
 ---
-- en -550 la Grèce c'est la Grèce continentale, la côte Ionienne, la Crète et des colonies tout autour de la mer noire et de la mer Méditerranée.
-- La Lydie et son roi Crésus forment une barrière avec les Perses.
-- Lorsque la Lydie s'effondre, ls cités des la côte Ionienne sont prises une à une par les Perses.
-- La Perse s'empare de la Thrace jusqu'à la Macédoine qui lui prête allégeance.
-- Première guerre médique en -492 mais les Athéniens écrasent les perses de Darius à la bataille de Marathon.
-- Deuxième guerre médique en -481 déclenchée par Xerxès qui s'allie à Thèbes contre Spartes et Athènes. Première victoire des Perses à la bataille des Thermopyles, Athènes est perdue mais la flotte perse est décimée à la bataille de Salamine, et les perses se font détruire à la bataille de Platées. 
-- La Ligue de Délos est crée par Athènes pour faire face à l'empire Perse et est rejointe par les cités Ioniennes.
-- En -431 la Ligue du Péloponnèse de Spartes et celle de Délos se font la Guerre du Péloponnèse pendant 30 ans
-- En -359 l'ancien prisonnier Athénien Philippe II monte sur le trône de la Macédoine et modernise le royaume. Il prend la Thrace et gagne la bataille de Chéronée à Thèbes en -338 ce qui force les Grecs à s'unifier dans la ligue de Corinthe qui est sous la main de Philippe II.
-- En -336 Philippe II est assassiné et c'est son fils Alexandre le Grand, élevé par Aristote, qui prend le relais.
-- Il fume Darius III petit à petit en prenant ville par ville, notamment le Levant, l'Egypte où il fonde Alexandrie. Il va jusqu'en Inde et dans les steppes asiatiques mais il doit rentrer car ses troupes sont épuisées. Il meurt brutalement en -323 d'une maladie.
-- L'immense royaume est donc partagé après les Guerres diadoques et à la fin on a : la Macédoine de Cassandre, la Thrace de Lysimaque, l'Asie mineure d'Antigone, l'Egypte de Ptolémée, l'Empire oriental de Séleucos et le reste pour l'empire Maurya en Inde...
+- La révolte de l'Ionie conduit Darius Ier à attaquer la Grèce. Les Athéniens remportent la bataille de Marathon en 490 av. J.-C.
+- Xerxès envahit la Grèce en 480 av. J.-C. Après les Thermopyles et la prise d'Athènes, la flotte grecque gagne à Salamine ; les victoires de Platées et du cap Mycale en 479 repoussent l'offensive perse.
+- Athènes dirige la ligue de Délos et transforme progressivement cette alliance en empire maritime. Le Ve siècle est celui de la démocratie athénienne, mais celle-ci exclut les femmes, les esclaves et les étrangers résidents.
+- La guerre du Péloponnèse oppose Athènes à Sparte et à leurs alliés de 431 à 404 av. J.-C. Sparte l'emporte, au prix d'un affaiblissement général du monde des cités.
+- L'hégémonie spartiate est contestée par Thèbes, victorieuse à Leuctres en 371. Les conflits entre cités permettent à la Macédoine de Philippe II de devenir la principale puissance grecque.
+- Philippe II bat Athènes et Thèbes à Chéronée en 338 av. J.-C. et organise la ligue de Corinthe. Il est assassiné en 336 et son fils Alexandre III, dit le Grand, lui succède.
+- Alexandre conquiert l'Empire achéménide, prend le Levant et l'Égypte, puis poursuit jusqu'en Asie centrale et dans la vallée de l'Indus. Son armée refuse d'aller plus loin en 326 av. J.-C.
+- Alexandre meurt à Babylone en 323 av. J.-C. sans successeur adulte. Les guerres des Diadoques divisent son empire entre plusieurs royaumes hellénistiques, notamment les Antigonides en Macédoine, les Lagides en Égypte et les Séleucides en Asie.
+- La période hellénistique diffuse largement la langue et les cultures grecques, qui se mêlent aux traditions locales dans des villes comme Alexandrie, Antioche et Pergame.

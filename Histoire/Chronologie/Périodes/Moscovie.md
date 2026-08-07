@@ -2,25 +2,21 @@
 type: periode
 civilisation: Russie
 groupe: Europe
-nom: Moscovie
-debut: 1371
-fin: 1618
+nom: Grande-principauté de Moscou et tsarat de Russie
+debut: 1283
+fin: 1613
 couleur: "#960073"
-resume:
+resume: Ascension de Moscou, règne d'Ivan le Terrible et Temps des troubles
 ordre: "290"
 detaille: non
 ---
-- En 1350 c'est encore la Horde d'Or qui contrôle le territoire et qui vassalise toute la zone de la Russie dont celle où se trouve Moscou. Cette zone se fait tabasser par la Pologne et la Lituanie.
-- En 1371, le prince de Moscou romps les liens avec la horde d'Or et remporte une bataille décisive contre eux à la bataille de Koulikovo en 1380.
-- L'arrivée de Tamerlan fragilise grandement la horde d'Or ce qui permet à la Russie et aux Lituaniens de prendre plus d'espace.
-- Quand la Pologne et la Lituanie s'unissent, la harde d'Or elle se split en plusieurs Khanats.
-- En 1478, Ivan III s'empare de la république de Novgorod au nord.
-- En 1533, Ivan IV le terrible monte sur le trône et se fait couronner Tsar (le premier) en 1547. 
-- Il agrandit beaucoup le territoire en prenant le Khanat de Kazan à l'est et celui de Astrakhan au sud.
-- En tentant de prendre la Livonie, la Russie se retrouve en guerre contre la Suède. Elle perd la guerre et son accès à la mer Baltique.
-- Il développe sa propre police, les opritchniki, qui sèment la terreur et il tue carrément son fils ainé sous la colère.
-- En 1571 Moscou est mis à sac par les Ottomans
-- En 1598, Fédor Ier meurt et c'est la fin des Riourikides qui étaient au pouvoir depuis 862.
-- Le pays est ensuite marqué par le temps des troubles, entre guerre de succession et famine. Elle subit en même temps la guerre face à la Pologne Lituanie et face à la Suède.
-- En 1613, Michel Ier (qui fonde alors la dynastie des Romanov) monte sur le trône.
-- En 1618, la paix est enfin signée avec la Suède et la PL.
+- La principauté de Moscou se forme à la fin du XIIIe siècle sous Daniel, fils d'Alexandre Nevski. Ses princes paient tribut aux khans de la Horde d'Or et profitent de leur soutien pour s'étendre.
+- Ivan Ier obtient le titre de grand-prince de Vladimir et fait de Moscou un centre religieux et fiscal important. La principauté rivalise avec Tver et avec la Lituanie.
+- Dimitri Donskoï bat une armée de Mamaï à Koulikovo en 1380, victoire prestigieuse mais qui ne met pas immédiatement fin à la domination de la Horde. Tokhtamych incendie Moscou en 1382.
+- L'affaiblissement de la Horde d'Or, notamment après les campagnes de Tamerlan, favorise l'autonomie des principautés russes et la formation de plusieurs khanats.
+- Ivan III annexe Novgorod en 1478 et Tver en 1485. Le « grand affrontement » sur l'Ougra en 1480 marque traditionnellement la fin de la suzeraineté de la Horde.
+- Ivan IV est couronné « tsar de toutes les Russies » en 1547. Il conquiert les khanats de Kazan en 1552 et d'Astrakhan en 1556, ouvrant la route de la Volga et de la Sibérie.
+- La guerre de Livonie, de 1558 à 1583, se termine par un échec face à la Pologne-Lituanie et à la Suède. La Russie ne parvient pas à obtenir un accès durable à la Baltique.
+- L'*opritchnina* d'Ivan IV s'accompagne de confiscations, de déportations et de massacres. En 1571, les Tatars de Crimée, vassaux des Ottomans, incendient Moscou.
+- La mort de Fédor Ier en 1598 met fin à la dynastie des Riourikides. Famines, prétendants rivaux et interventions polono-lituaniennes et suédoises plongent le pays dans le Temps des troubles.
+- Une assemblée élit Michel Romanov tsar en 1613, fondant une dynastie qui règne jusqu'en 1917.

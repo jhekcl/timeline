@@ -2,40 +2,24 @@
 type: periode
 civilisation: Byzantins
 groupe: Europe
-nom: Empire Byzantin
+nom: Empire byzantin
 debut: 476
 fin: 1453
 couleur: "#AB008D"
-resume: L'empire romain d'orient mais sous un autre nom
+resume: L'Empire romain d'Orient, de Constantinople à la conquête ottomane
 ordre: "170"
 detaille: non
 ---
-- Zénon prend le pouvoir en 476. Il s'agit en réalité plutôt de l'empire romain d'orient que de l'empire Byzantin. La capitale est Constantinople.
-- Les principaux ennemis sont les Bulgares au nord et les Perses à l'est. 
-- Quand Justinien monte sur le trône en 527 avec son épouse Théodora, il impose son code Justinien en 529. Il repousse les perses, les bulgares et s'empare du royaume des Vandales dans le Maghreb avec la corse et la Sardaigne. Le réel objectif est la reconquête de Rome ce qu'il arrive à faire en prenant l'Italie aux Ostrogoths en 540. Il construit en parallèle la Basilique Sainte Sophie. 
-- Sauf que cette apogée ne dure pas longtemps et la peste notamment en 541 affaiblit beaucoup l'empire et les Ostrogoths récupèrent l'Italie.
-- En 568 c'est au tour des Lombards de fumer les Byzantins en Italie car ces derniers subissent la pression des Avars au nord au même moment. Ils conservent tout de même la bande entre Ravenne et Rome.
-- Sous Héraclius, les Byzantins se font casser la gueule par les Perses qui prennent l'Egypte et s'avancent jusqu'au Bosphore. Héraclius n'a pas d'autre choix que de s'allier avec les Gokturks et gagne la bataille de Ninive en 628 ce qui lui permet de récupérer les territoires perdus.
-- En 636, la défaite de la bataille du Yarmouk face au Califat Arabe fait perdre tout le Levant. Puis les arabes prennent du terrain en Afrique, en Méditerranée et même en Turquie.
-- Les arabes siègent Constantinople de 674 à 678 mais les byzantins inventent le feu grégeois pour se défendre. Ils résistent également à un second siège en 717.
-- Irène crève les yeux de son fils Constantin VI pour devenir impératrice. Le pape souhaite qu'elle se marie avec Charlemagne pour rétablie l'empire romain mais c'est pas possible.
-- La politique iconoclaste est très néfaste pour le royaume et ne dure pas.*
-- Ensuite les byzantins perdent des terres peu à peu : Baléares, Naples, Venise, Sardaigne, ...
-- En 1014, Basile II termine les Bulgares puis les croates et les arméniens.
-- Plus tard les serbes et les croates reprennent du terrain.
-- Ils repoussent les Russes en 1043 grâce au feu grégeois.
-- L'arrivée des Normands sur les territoires byzantins au sud de l'Italie marque la séparation nette entre les catholiques d'occident et les orthodoxes d'orient.
-- En 1071, la défaite à la bataille de Mantizikert en 1071 contre les Seldjoukides. Ces derniers s'emparent de Nicée tout proche de Constantinople en 1077.
-- La première croisade de 1095 et la prise des Nicée par les occidentaux en 1097 permet aux Byzantins de reprendre du terrain en Anatolie.
-- La Serbie et le royaume Arménien sont repris mais Venise et les Petchenègues leurs cassent la gueule.
-- La Serbie, les Arméniens et les Bulgares reviennent, le Sultanat de Roum est très dangereux.
-- Pendant la 3e croisade de 1189, Richard Coeur de Lion (Angleterre) prend Chypre et y fonde un état latin.
-- Pendant la 4e croisade lancée en 1198, à l'aide de la flotte Vénitienne c'est Constantinople qui tombe pour la première fois en 1204. 
-- L'empire est alors démembré avec des Etats Latins qui contrôlent tout le centre et les Vénitiens qui contrôlent les îles.
-- En 1261, après avoir repris le Thessalonique, les byzantins reprennent tranquillement Constantinople.
-- A la fin du XIIIe, le Sultanat de Roum se fait découper par les mongols et se décompose en Beylicats turcs.
-- Ces beylicats s'emparent de pratiquement toute l'Anatolie.
-- En 1299, parmi ces beylicats, celui d'Osman Ier fonde la dynastie des ottomans.
-- L'empire Serbe profite de l'affaiblissement des Byzantins en progressant largement vers le sud mais cet empire s'effondre rapidement et c'est les ottomans qui, en remportant en 1371 la bataille de Martiza, récupèrent une bonne part des Balkans. Ces derniers prennent également les territoires Serbes, Bulgares et les Beylicats turcs. 
-- L'empire byzantin est réduit à la ville de Constantinople.
-- En 1453, les turcs prennent Constantinople qui devient alors Istanbul. Le seul vestige restant de l'empire romain est l'empire de Trébizonde au sud est de la mer noir mais ce dernier tombe également en 1461.
+- Les habitants de l'empire se considèrent comme Romains ; l'expression « Empire byzantin » est une appellation moderne. Sa capitale est Constantinople et le grec supplante progressivement le latin dans l'administration.
+- Justinien Ier règne de 527 à 565 avec l'impératrice Théodora. Il fait compiler le droit romain dans le *Corpus juris civilis* et reconstruire la basilique Sainte-Sophie.
+- Les armées de Bélisaire et de Narsès reconquièrent le royaume vandale d'Afrique et, après une longue guerre, le royaume ostrogoth d'Italie. Ces conquêtes sont fragilisées par leur coût et par la peste dite de Justinien à partir de 541.
+- Dès 568, les Lombards prennent une grande partie de l'Italie. L'empire conserve néanmoins plusieurs territoires, notamment Ravenne, Rome, la Sicile et des régions du Sud.
+- Au début du VIIe siècle, les Sassanides conquièrent la Syrie et l'Égypte. Héraclius contre-attaque et remporte une victoire décisive près de Ninive en 627, mais l'empire épuisé perd bientôt ces provinces face aux armées arabes.
+- La défaite du Yarmouk en 636 entraîne la perte de la Syrie et de la Palestine ; l'Égypte est conquise dans les années 640. Constantinople résiste aux offensives arabes du VIIe siècle puis au grand siège de 717-718.
+- Les VIIIe et IXe siècles sont marqués par la crise iconoclaste, conflit religieux et politique autour du culte des images. Le culte des icônes est définitivement restauré en 843.
+- Sous la dynastie macédonienne, l'empire connaît un renouveau militaire et culturel. Basile II soumet le Premier Empire bulgare en 1018.
+- Le schisme de 1054 symbolise l'éloignement entre les Églises de Rome et de Constantinople, même si la rupture s'est construite sur une longue durée.
+- La défaite de Mantzikert contre les Seldjoukides en 1071 accélère la perte d'une grande partie de l'Anatolie. La dynastie des Comnènes rétablit temporairement la situation avec l'aide, parfois difficile à contrôler, des croisés occidentaux.
+- En 1204, la quatrième croisade est détournée vers Constantinople, qui est prise et pillée. L'empire est partagé entre États latins et États grecs successeurs.
+- L'Empire de Nicée reprend Constantinople en 1261, mais l'État restauré reste affaibli. Serbes, Bulgares, Vénitiens, Génois et principautés turques profitent de son recul.
+- Les Ottomans conquièrent progressivement l'Anatolie et les Balkans. Le sultan Mehmed II prend Constantinople le 29 mai 1453 ; l'Empire de Trébizonde, dernier grand État byzantin, tombe en 1461.
