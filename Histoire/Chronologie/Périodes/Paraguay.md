@@ -5,7 +5,7 @@ groupe: Amerique du sud
 nom: Paraguay
 debut: 1537
 fin: 1870
-couleur: "#B50000"
+couleur: "#A19164"
 resume:
 ordre: "65"
 detaille: non
