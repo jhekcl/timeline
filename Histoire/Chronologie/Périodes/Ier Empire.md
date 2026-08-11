@@ -4,7 +4,7 @@ civilisation: France
 groupe: Europe
 nom: Ier Empire
 debut: 1804
-fin: 1815
+fin: 1814
 couleur: "#B00000"
 resume:
 ordre: "260"
@@ -31,8 +31,3 @@ detaille: non
 - En parallèle, les britanniques progressent en espagne aux cotés des nombreux insurgés. En mars 1813, UK, Prusse et Russie forment une nouvelle coalition contre la France.
 - Les Anglais de Wellington libèrent toute l'espagne en 1813 et le trône d'espagne est rendu à Ferdinand VII.
 - Même si plusieurs batailles sont gagnées par Napoléon en Allemagne, lorsque l'Autriche rejoint la coalition et que la France perd la bataille de Leipzig le 19 octobre 1813 ce qui inverse le rapport de force.
-- Finalement Paris est prise le 31 mars 1814 et Napoléon abdique le 6 avril. C'est le frèrue le Louis XVI Louis XVIII (réfugié en angleterre) qui est proclamé roi par le Sénat pendant que Napoléon s'exile sur l'ile d'Elbe.
-- Le traité de Paris du 13 mai 1814 la france doit renoncer à toutes ces conquetes. C'est au congrès de Vienne du 18 septembre que le reste des territories sera départagé.
-- Le 1er Juin 1815, Napoléon débarque en France à golfe Juan. Le 7 mars il rallie les troupes royales venues l'intercepter et il rentre dans Paris le 20 mars à l'aide de l'armée. Une coalition comprenant tout le monde se lève et le 18 juin la bataillde de Waterloo contraint une 2e abdication de Napoléon. C'est la fin de 100 jours.
-- Louis XVIII reprend son trône et Napoléon est exilé sur l'Ile britannique de Sainte Hélène.
-- Le 9 juin se termine le congrès de Vienne : l'autriche prend la dalmatie et le nord de l'Italie, la Sardaigne reprend le piémont et gênes, les Etats pontificaux sont restaurés, pes Pays Bas sont formés (avec le Belgique), la Sicile reprend le royaume de Naples, la prusse s'agrandit vers l'ouest et la russe récupère la majorité du duché de Varsovie.
