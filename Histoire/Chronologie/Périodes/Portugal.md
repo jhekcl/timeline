@@ -9,7 +9,10 @@ couleur: "#3A3673"
 resume:
 ordre: "285"
 ---
-- Les Portugais posent des comptoirs le long de l'Afrique et de l'Océan Pacifique. Vasco de Gama atteint en 1498 les Indes par la mer.
+- En 1415, Ceuta est prise en Afrique du Nord.
+- Madère en 1420, Açores en 1430. Bartolomeu Dias franchit Bonne Espérance en 1488.
+- Traité de Tordesillas en 1494.
+- Vasco de Gama atteint en 1498 les Indes par la mer.
 - En 1500, Cabral découvre le Brésil qui est légitime puisqu'il respecte le traité de Tordesillas. 
 - Vasco de Gama prends Kilwa en Tanzanie et Calicut en Inde en 1502. Puis des comptoirs sont posés jusqu'à Ormuz, Malacca en Malaisie, Macao en Chine et les Moluques en Indonésie.
 - Beaucoup de villes sont également prises au Maroc (Agadir, Tanger, Ceuta, ...)

@@ -1541,6 +1541,8 @@ if (pages.length === 0) {
             zoneFrise.appendChild(compression);
         }
 
+        const scrollLeftARestaurer = etat.scrollLeft;
+
         requestAnimationFrame(() => {
             if (typeof options.apresAffichage === "function") {
                 options.apresAffichage(scroll);
@@ -1562,7 +1564,30 @@ if (pages.length === 0) {
 
                 etat.scrollLeft = scroll.scrollLeft;
             } else {
-                scroll.scrollLeft = etat.scrollLeft;
+                scroll.scrollLeft = scrollLeftARestaurer;
+
+                /*
+                   Obsidian peut reconstruire la vue Dataview lors de
+                   l'ouverture d'une note dans un nouvel onglet. Dans ce
+                   cas, la largeur du conteneur n'est pas toujours stable
+                   au premier frame et le navigateur ramène scrollLeft à 0.
+                   On réapplique donc la valeur sauvegardée après le layout.
+                */
+                if (options.restaurerScroll) {
+                    const restaurerScrollHorizontal = () => {
+                        if (scrollActuel === scroll) {
+                            scroll.scrollLeft = scrollLeftARestaurer;
+                            etat.scrollLeft = scroll.scrollLeft;
+                        }
+                    };
+
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(
+                            restaurerScrollHorizontal
+                        );
+                    });
+                    setTimeout(restaurerScrollHorizontal, 150);
+                }
             }
         });
     }
@@ -1662,7 +1687,9 @@ if (pages.length === 0) {
     }
 
     afficherFrise(
-        etatRestaure ? {} : { centrerAnnee: 0 }
+        etatRestaure
+            ? { restaurerScroll: true }
+            : { centrerAnnee: 0 }
     );
 
     if (etatRestaure) {
