@@ -5,7 +5,7 @@ groupe: Amerique du sud
 nom: Vice royauté de Rio de la Plata
 debut: 1776
 fin: 1816
-couleur: "#004670"
+couleur: "#C45E00"
 resume:
 ordre: "65"
 detaille: non

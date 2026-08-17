@@ -5,7 +5,7 @@ groupe: Europe
 nom: Provinces Unies
 debut: 1579
 fin: 1795
-couleur: "#D96900"
+couleur: "#3A4A31"
 resume:
 ordre: "410"
 detaille: non

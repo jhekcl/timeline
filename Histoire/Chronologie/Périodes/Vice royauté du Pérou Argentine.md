@@ -5,7 +5,7 @@ groupe: Amerique du sud
 nom: Vice royauté du Pérou
 debut: 1536
 fin: 1776
-couleur: "#004670"
+couleur: "#C45E00"
 resume:
 ordre: "65"
 detaille: non

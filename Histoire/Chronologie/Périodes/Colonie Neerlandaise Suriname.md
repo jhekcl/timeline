@@ -5,7 +5,7 @@ groupe: Amerique du sud
 nom: Colonie Neerlandaise
 debut: 1667
 fin: 1975
-couleur: "#C45E00"
+couleur: "#3A4A31"
 resume:
 ordre: "280"
 detaille: non

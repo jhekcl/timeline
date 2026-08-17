@@ -5,7 +5,7 @@ groupe: Amerique du sud
 nom: Colonie Espagnole
 debut: 1530
 fin: 1825
-couleur: "#AB9400"
+couleur: "#C45E00"
 resume:
 ordre: "65"
 detaille: non

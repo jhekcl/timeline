@@ -1,7 +1,6 @@
 ---
 type: periode
 civilisation: Romains
-sous_civilisation: Ostrogoths
 groupe: Europe
 nom: Ostrogoths
 debut: 493

@@ -1,7 +1,6 @@
 ---
 type: periode
 civilisation: Romains
-sous_civilisation: Rome
 groupe: Europe
 nom: Apogée
 debut: -27

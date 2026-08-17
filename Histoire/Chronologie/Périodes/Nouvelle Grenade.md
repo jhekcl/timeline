@@ -5,7 +5,7 @@ groupe: Amerique du sud
 nom: Nouvelle Grenade
 debut: 1499
 fin: 1819
-couleur: "#FE5179"
+couleur: "#C45E00"
 resume:
 ordre: "65"
 detaille: non

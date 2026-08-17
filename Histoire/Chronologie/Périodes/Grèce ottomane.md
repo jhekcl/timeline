@@ -1,12 +1,11 @@
 ---
 type: periode
 civilisation: Grecs
-sous_civilisation: Minoens
 groupe: Europe
-nom: Civilisation Minoenne
-debut: -2000
-fin: -1370
-couleur: "#2FB5AE"
+nom: Empire Ottoman
+debut: 1500
+fin: 1830
+couleur: "#0C7A99"
 resume: La Crète avant l'arrivée des mycéniens
 ordre: "30"
 detaille: non

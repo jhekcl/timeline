@@ -728,6 +728,7 @@ if (pages.length === 0) {
         zoom: 1,
         recherche: "",
         civilisation: "Toutes",
+        tronquerA: null,
         lignesRepliees: new Set(),
         scrollLeft: 0,
         scrollTopPage: 0
@@ -801,6 +802,7 @@ if (pages.length === 0) {
                     zoom: etat.zoom,
                     recherche: etat.recherche,
                     civilisation: etat.civilisation,
+                    tronquerA: etat.tronquerA,
                     lignesRepliees: [...etat.lignesRepliees],
                     scrollLeft: etat.scrollLeft,
                     scrollTopPage: etat.scrollTopPage
@@ -890,6 +892,34 @@ if (pages.length === 0) {
     civilisationControle.appendChild(civilisationSelect);
     toolbar.appendChild(civilisationControle);
 
+    const troncatureControle = document.createElement("div");
+    troncatureControle.className = "frise-controle";
+
+    const troncatureLabel = document.createElement("label");
+    troncatureLabel.textContent = "Année de début";
+
+    const troncatureSelect = document.createElement("select");
+
+    troncatureSelect.appendChild(
+        new Option("Ne pas tronquer", "")
+    );
+
+    for (let annee = 0; annee <= 2000; annee += 100) {
+        troncatureSelect.appendChild(
+            new Option(String(annee), String(annee))
+        );
+    }
+
+    const troncatureBouton = document.createElement("button");
+    troncatureBouton.type = "button";
+    troncatureBouton.className = "frise-bouton";
+    troncatureBouton.textContent = "Tronquer à";
+
+    troncatureControle.appendChild(troncatureLabel);
+    troncatureControle.appendChild(troncatureSelect);
+    toolbar.appendChild(troncatureControle);
+    toolbar.appendChild(troncatureBouton);
+
     const zoomControle = document.createElement("div");
     zoomControle.className =
         "frise-controle frise-controle-zoom";
@@ -968,7 +998,13 @@ if (pages.length === 0) {
                 recherche === "" ||
                 texteRecherche.includes(recherche);
 
-            return civilisationValide && rechercheValide;
+            const troncatureValide =
+                !Number.isFinite(etat.tronquerA) ||
+                periode.fin >= etat.tronquerA;
+
+            return civilisationValide &&
+                rechercheValide &&
+                troncatureValide;
         });
     }
 
@@ -1002,7 +1038,9 @@ if (pages.length === 0) {
             ...source.map(periode => periode.fin)
         );
 
-        debut -= 50;
+        debut = Number.isFinite(etat.tronquerA)
+            ? etat.tronquerA
+            : debut - 50;
         fin += 50;
 
         return { debut, fin };
@@ -1377,8 +1415,12 @@ if (pages.length === 0) {
                 groupe.elements
                     .sort((a, b) => a.debut - b.debut)
                     .forEach(periode => {
+                        const debutAffiche = Number.isFinite(etat.tronquerA)
+                            ? Math.max(periode.debut, etat.tronquerA)
+                            : periode.debut;
+
                         const debutPeriode =
-                            transformerAnnee(periode.debut);
+                            transformerAnnee(debutAffiche);
 
                         const finPeriode =
                             transformerAnnee(periode.fin);
@@ -1603,6 +1645,7 @@ if (pages.length === 0) {
         etat.zoom = 1;
         etat.recherche = "";
         etat.civilisation = "Toutes";
+        etat.tronquerA = null;
         etat.scrollLeft = 0;
         etat.lignesRepliees.clear();
 
@@ -1611,6 +1654,7 @@ if (pages.length === 0) {
         zoomValeur.textContent = "100 %";
         remplirCivilisations();
         civilisationSelect.value = "Toutes";
+        troncatureSelect.value = "";
 
         afficherFrise({ centrerAnnee: 0 });
     });
@@ -1640,6 +1684,14 @@ if (pages.length === 0) {
         afficherFrise({ centrerAnnee: 0 });
     });
 
+    troncatureBouton.addEventListener("click", () => {
+        etat.tronquerA = troncatureSelect.value === ""
+            ? null
+            : Number(troncatureSelect.value);
+        etat.scrollLeft = 0;
+        afficherFrise();
+    });
+
     zoomInput.addEventListener("input", event => {
         changerZoom(Number(event.target.value));
     });
@@ -1653,12 +1705,14 @@ if (pages.length === 0) {
         etat.zoom = 1;
         etat.recherche = "";
         etat.civilisation = "Toutes";
+        etat.tronquerA = null;
         etat.scrollLeft = 0;
         etat.lignesRepliees.clear();
 
         friseSelect.value = etat.friseId;
         rechercheInput.value = "";
         civilisationSelect.value = "Toutes";
+        troncatureSelect.value = "";
         zoomInput.value = "1";
         zoomValeur.textContent = "100 %";
 
@@ -1674,6 +1728,9 @@ if (pages.length === 0) {
     zoomInput.value = String(etat.zoom);
     zoomValeur.textContent =
         `${Math.round(etat.zoom * 100)} %`;
+    troncatureSelect.value = Number.isFinite(etat.tronquerA)
+        ? String(etat.tronquerA)
+        : "";
     remplirCivilisations();
 
     if (
