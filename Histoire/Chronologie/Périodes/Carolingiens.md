@@ -12,6 +12,7 @@ detaille: non
 ---
 - A la mort de son père, Charlemagne commence par soumettre le duché d'Aquitaine.
 - Il fait d'Aix la Chapelle la nouvelle capitale, récupère du terrain en Espagne, en Bavière et à l'Est sur les avars. 
+- Bataille de Roncevaux en 778 contre les musulmans dans les Pyrénées, mort du chevalier Roland.
 - Il s'empare également du royaume Lombard à la demande du Pape et ce dernier le couronne donc Empereur en 800.
 - Il n'a qu'un seul fils Louis Ier le pieux qui lui succède en 814. Sous le chaos des raids Vikings, c'est après le traité de Verdun de 843 que le royaume est divisé entre ses 3 fils survivants : Charles II le chauve récupère le Francie occidentale, Lothaire Ier récupère l'affreuse Francie Médiane et Louis II le Germanique récupère la Francie orientale.
 - Un an avant, en 842, les serments de Strasbourg marquent l'alliance entre Charles et Louis contre Lothaire mais montrent aussi un première dissidence car la partie de Charles est rédigée en français et celui de Louis en Allemand.
